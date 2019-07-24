@@ -1,0 +1,35 @@
+.header {
+    // background: linear-gradient(45deg,rgba(31, 28, 44, 0.6),rgba(146, 141, 171, 0.6)), url(../../assets/jon-moore-tIgJR__pjZw-unsplash.jpg) no-repeat center;
+    background: url(../../assets/jon-moore-tIgJR__pjZw-unsplash.jpg) no-repeat center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    .headerLayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .headerBlue {
+        color: coral;
+    }
+    h1 {
+        width: 40%;
+        font-weight: 900;
+        margin: 35px 0;
+        z-index: 10;
+        color: white;
+    }
+    h2 {
+        z-index: 10;
+        color: white;
+        font-weight: 700;
+    }
+}
