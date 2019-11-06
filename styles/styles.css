@@ -263,7 +263,8 @@ html {
     height: 100%;
     background: rgba(0, 0, 0, 0.8); }
   .header .headerBlue {
-    color: coral; }
+    color: coral;
+    font-size: 2.5rem; }
   .header h1 {
     width: 40%;
     font-weight: 900;
