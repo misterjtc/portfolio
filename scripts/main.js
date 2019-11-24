@@ -7,7 +7,7 @@ $(document).ready(function() {
         dots: true,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 5000,
         // centerMode: true,
         // centerPadding: 0,
         adaptiveHeight: true,

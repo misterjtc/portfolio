@@ -319,13 +319,13 @@ html {
     height: 100% !important; }
   #projectHero .heroItem {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative; }
     #projectHero .heroItem .text {
       position: absolute;
       top: 0;
       right: 0;
-      bottom: 0;
+      bottom: 25%;
       left: 0;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -343,7 +343,11 @@ html {
       width: 100%;
       height: 100%; }
       #projectHero .heroItem .img img {
-        width: 100%; }
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
   #projectHero .slick-dots {
     bottom: 10px;
     left: 0; }
@@ -360,6 +364,10 @@ html {
   #projectHero .slick-arrow:before {
     font-size: 4rem;
     color: white; }
+
+#nextProjectHero {
+  height: 100vh;
+  width: 100%; }
 
 #thisIsMe {
   height: 100vh;
@@ -401,7 +409,8 @@ html {
       width: 100%; }
       #thisIsMe .meListContainer .theList ul {
         list-style: none;
-        width: 100%; }
+        width: 100%;
+        padding-left: 0; }
         #thisIsMe .meListContainer .theList ul li {
           font-size: 2rem;
           text-align: left;
