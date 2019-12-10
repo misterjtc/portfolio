@@ -1,5 +1,6 @@
 #splash {
-    background: url(../../assets/jon-moore-tIgJR__pjZw-unsplash_1920x1080_web.jpg) no-repeat center;
+    background: url(../../assets/x-home-main-bg-cornerstone.jpg) no-repeat center;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -16,7 +17,56 @@
         bottom: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.7);
+        // background: rgba(0, 0, 0, 0.2);
+    }
+    .whoDidIt {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        color: darken(white, 30%);
+        
+        p {
+            font-size: 1.4rem;
+        }
+    }
+    .mainLinks {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 25%;
+                background: $linkBackground;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color: $greyText;
+                    width: 100%;
+                    height: 100%;
+                    white-space: nowrap;
+                    border-right: 1px solid #171717;
+                    text-shadow: 0 -1px 0 #292929;
+                    box-shadow: inset -1px 0 0 0 rgba(255,255,255,0.065);
+                    transition: color 0.3s ease-in;
+                    &:hover {
+                        color: lighten($greyText, 50%);
+                    }
+                }
+            }
+        }
     }
     .socialLinks {
         position: absolute;
@@ -30,13 +80,16 @@
             list-style: none;
             li {
                 text-decoration: none;
+                background: $linkBackground;
+                margin: 10px 0;
+                border-radius: 10px;
                 a {
                     display: block;
-                    color: white;
-                    padding: 15px 10px;
-                    transition: color 0.3s linear;
+                    color: $greyText;
+                    padding: 15px 18px;
+                    transition: color 0.3s ease-in;
                     &:hover {
-                        color: darken(white, 20%);
+                        color: lighten($greyText, 50%);
                     }
                     i {
                         font-size: 2.5rem;
@@ -47,12 +100,13 @@
 
     }
     .headerBold {
-        color: coral;
+        color: $greyText;
         font-size: 8rem;
+        font-weight: 900;
     }
     h1 {
         width: 40%;
-        font-weight: 900;
+        font-weight: 700;
         margin: 35px 0;
         z-index: 10;
         color: white;

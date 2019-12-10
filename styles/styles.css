@@ -237,7 +237,8 @@ html {
     border-radius: 10px; }
 
 #splash {
-  background: url(../../assets/jon-moore-tIgJR__pjZw-unsplash_1920x1080_web.jpg) no-repeat center;
+  background: url(../../assets/x-home-main-bg-cornerstone.jpg) no-repeat center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -262,8 +263,67 @@ html {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); }
+    height: 100%; }
+  #splash .whoDidIt {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: #b3b3b3; }
+    #splash .whoDidIt p {
+      font-size: 1.4rem; }
+  #splash .mainLinks {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    #splash .mainLinks ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #splash .mainLinks ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100%;
+        width: 25%;
+        background: #272727; }
+        #splash .mainLinks ul li a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          text-decoration: none;
+          color: #706f6f;
+          width: 100%;
+          height: 100%;
+          white-space: nowrap;
+          border-right: 1px solid #171717;
+          text-shadow: 0 -1px 0 #292929;
+          -webkit-box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.065);
+          box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.065);
+          -webkit-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          transition: color 0.3s ease-in; }
+          #splash .mainLinks ul li a:hover {
+            color: #efefef; }
   #splash .socialLinks {
     position: absolute;
     display: -webkit-box;
@@ -284,24 +344,28 @@ html {
     #splash .socialLinks ul {
       list-style: none; }
       #splash .socialLinks ul li {
-        text-decoration: none; }
+        text-decoration: none;
+        background: #272727;
+        margin: 10px 0;
+        border-radius: 10px; }
         #splash .socialLinks ul li a {
           display: block;
-          color: white;
-          padding: 15px 10px;
-          -webkit-transition: color 0.3s linear;
-          -o-transition: color 0.3s linear;
-          transition: color 0.3s linear; }
+          color: #706f6f;
+          padding: 15px 18px;
+          -webkit-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          transition: color 0.3s ease-in; }
           #splash .socialLinks ul li a:hover {
-            color: #cccccc; }
+            color: #efefef; }
           #splash .socialLinks ul li a i {
             font-size: 2.5rem; }
   #splash .headerBold {
-    color: coral;
-    font-size: 8rem; }
+    color: #706f6f;
+    font-size: 8rem;
+    font-weight: 900; }
   #splash h1 {
     width: 40%;
-    font-weight: 900;
+    font-weight: 700;
     margin: 35px 0;
     z-index: 10;
     color: white; }
@@ -370,13 +434,15 @@ html {
   width: 100%; }
 
 #thisIsMe {
-  height: 100vh;
   width: 100%;
   margin: 0;
-  background: #3f4245;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
@@ -391,27 +457,65 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    width: 25%;
-    height: 40%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    margin: 10vh 0;
     color: white; }
+    #thisIsMe .meListContainer:nth-child(n+2) {
+      margin-top: 0; }
     #thisIsMe .meListContainer .title {
-      width: 100%; }
+      width: 100%;
+      text-align: center;
+      margin-bottom: 100px; }
       #thisIsMe .meListContainer .title h3 {
-        font-size: 3.5rem;
-        margin-bottom: 15px; }
+        font-size: 4.5rem;
+        margin-bottom: 15px;
+        font-weight: 600; }
     #thisIsMe .meListContainer .theList {
-      width: 100%; }
-      #thisIsMe .meListContainer .theList ul {
-        list-style: none;
-        width: 100%;
-        padding-left: 0; }
-        #thisIsMe .meListContainer .theList ul li {
-          font-size: 2rem;
-          text-align: left;
-          margin: 15px 0; }
+      width: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      #thisIsMe .meListContainer .theList div {
+        margin: 15px 0;
+        width: 25%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        #thisIsMe .meListContainer .theList div .icon i {
+          font-size: 6rem; }
+        #thisIsMe .meListContainer .theList div h3 {
+          font-weight: 600; }
+  #thisIsMe .whatIStandFor {
+    background: url(../../assets/bg-office-01.jpg) no-repeat center;
+    background-size: cover; }
+  #thisIsMe .myProfInterests {
+    background: url(../../assets/bg-office-02.jpg) no-repeat center;
+    background-size: cover; }
+  #thisIsMe .myPerInterests {
+    background: url(../../assets/bg-services-01.jpg) no-repeat center;
+    background-size: cover; }
