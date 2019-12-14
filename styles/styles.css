@@ -538,22 +538,22 @@ html {
     #thisIsMe .meListContainer .title {
       width: 100%;
       text-align: center;
-      margin-bottom: 100px; }
+      margin-bottom: 50px; }
       #thisIsMe .meListContainer .title h3 {
         font-size: 4.5rem;
         margin-bottom: 15px;
         font-weight: 600; }
     #thisIsMe .meListContainer .theList {
-      width: 60%;
+      width: 70%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       #thisIsMe .meListContainer .theList div {
@@ -573,17 +573,19 @@ html {
         -ms-flex-direction: column;
         flex-direction: column; }
         #thisIsMe .meListContainer .theList div .icon {
-          padding: 30px 60px;
+          padding: 28px 55px;
           border: 4px solid steelblue;
-          border-radius: 70px;
+          border-radius: 60px;
           margin: 0; }
           #thisIsMe .meListContainer .theList div .icon i {
-            font-size: 6rem;
+            font-size: 5.5rem;
             color: steelblue; }
         #thisIsMe .meListContainer .theList div h3 {
           font-weight: 600;
           margin-top: 15px;
-          font-size: 2.7rem;
+          font-size: 2.5rem;
+          text-align: center; }
+        #thisIsMe .meListContainer .theList div p {
           text-align: center; }
   #thisIsMe .whatIStandFor {
     background: url(../../assets/bg-office-01.jpg) no-repeat center;

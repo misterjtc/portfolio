@@ -12,4 +12,59 @@ $(document).ready(function() {
         // centerPadding: 0,
         adaptiveHeight: true,
     });
+    // Smoothscrool for main section links
+    $('.thisIsMeButton').on('click', function() {
+        // event.preventDefault();
+        console.log("you click the this is me link")
+        $.smoothScroll({
+        //   scrollElement: $('.pressInputsContainer'),
+          scrollTarget: '#thisIsMe',
+          speed: 800
+        });
+    });
+    $('.meButton').on('click', function() {
+        // event.preventDefault();
+        console.log("you click the this is me link")
+        $.smoothScroll({
+        //   scrollElement: $('.pressInputsContainer'),
+          scrollTarget: '#me',
+          speed: 800
+        });
+    });
+    $('.meButton').on('click', function() {
+        // event.preventDefault();
+        console.log("you click the this is me link")
+        $.smoothScroll({
+        //   scrollElement: $('.pressInputsContainer'),
+          scrollTarget: '#me',
+          speed: 800
+        });
+    });
+    $('.profInterestsButton').on('click', function() {
+        // event.preventDefault();
+        console.log("you click the this is me link")
+        $.smoothScroll({
+        //   scrollElement: $('.pressInputsContainer'),
+          scrollTarget: '#profInterests',
+          speed: 800
+        });
+    });
+    $('.perInterestsButton').on('click', function() {
+        // event.preventDefault();
+        console.log("you click the this is me link")
+        $.smoothScroll({
+        //   scrollElement: $('.pressInputsContainer'),
+          scrollTarget: '#perInterests',
+          speed: 800
+        });
+    });
+    $('.projectButton').on('click', function() {
+        // event.preventDefault();
+        console.log("you click the this is me link")
+        $.smoothScroll({
+        //   scrollElement: $('.pressInputsContainer'),
+          scrollTarget: '#mainProjects',
+          speed: 800
+        });
+    });
 });
