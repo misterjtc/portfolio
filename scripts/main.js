@@ -3,7 +3,7 @@ $(document).ready(function() {
     // Check if the DOM function is ready
     console.log("I'm Ready")
     // Initialize slick slider
-    $('#projectHero').slick({
+    $('#projectThingCam').slick({
         dots: true,
         speed: 500,
         autoplay: true,
