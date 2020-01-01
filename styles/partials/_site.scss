@@ -35,6 +35,9 @@ html {
     i {
         font-size: $iDesk;
     }
+    input, label {
+        font-size: $inputDesk;
+    }
 }
 .uppercase {
     text-transform: uppercase;
