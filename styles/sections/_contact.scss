@@ -12,7 +12,8 @@
         justify-content: center;
         align-items: center;
         .contactTitle {
-            width: 100%
+            width: 100%;
+            margin: 25px 0;
             h2 {
                 text-align: left;
                 margin-left: 100px;
@@ -38,6 +39,11 @@
                 input {
                     padding: 10px 10px;
                     margin: 25px 20px;
+                    border: none;
+                    border-bottom: 1px solid $linkBackground;
+                }
+                textarea {
+                    width: 80%;
                 }
             }
         }
