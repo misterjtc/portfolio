@@ -1,71 +1,78 @@
 footer {
     height: 15vh;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin: 0 auto;
     background: $linkBackground;
-    .footerLinks {
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            li {
-                a {
-                    display: inline-block;
-                    margin: 12px 7px;
-                    padding: 10px 13px;
-                    height: 40px;
-                    width: 40px;
-                    position: relative;
-                    text-align: center;
-                    border-radius: 10px;
-                    &:hover {
+    .wrapper {
+        margin: 0 auto;
+        width: 75%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footerLinks {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    a {
+                        display: inline-block;
+                        margin: 12px 7px;
+                        padding: 10px 13px;
+                        height: 40px;
+                        width: 40px;
+                        position: relative;
+                        text-align: center;
+                        border-radius: 10px;
+                        &:hover {
+                            .social1 {
+                                margin-top: -35px
+                            }
+                            .social2 {
+                                margin-top: 0;
+                            }
+                        }
                         .social1 {
-                            margin-top: -35px
+                            color: $linkBackground;
+                            display: block;
+                            padding: 8px;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            transition: margin-top 150ms linear;
                         }
                         .social2 {
-                            margin-top: 0;
+                            color: $linkBackground;
+                            display: block;
+                            padding: 8px;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            margin-top: 35px;
+                            transition: margin-top 150ms linear;
                         }
                     }
-                    .social1 {
-                        color: $linkBackground;
-                        display: block;
-                        padding: 8px;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        left: 0;
-                        bottom: 0;
-                        transition: margin-top 150ms linear;
+                    .github {
+                        background: steelblue;
                     }
-                    .social2 {
-                        color: $linkBackground;
-                        display: block;
-                        padding: 8px;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        left: 0;
-                        bottom: 0;
-                        margin-top: 35px;
-                        transition: margin-top 150ms linear;
+                    .thingiverse {
+                        background: palegoldenrod;
                     }
-                }
-                .github {
-                    background: steelblue;
-                }
-                .thingiverse {
-                    background: palegoldenrod;
-                }
-                .linkedin {
-                    background: indianred;
-                }
-                .instagram {
-                    background: mediumaquamarine;
+                    .linkedin {
+                        background: indianred;
+                    }
+                    .instagram {
+                        background: mediumaquamarine;
+                    }
                 }
             }
         }
     }
+
 }
