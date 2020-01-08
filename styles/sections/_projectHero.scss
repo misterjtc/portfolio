@@ -1,5 +1,5 @@
 .projectsAndThings {
-    height: 235vh;
+    height: 230vh;
     width: 100%;
     .projectSort {
         width: 100%;
@@ -36,12 +36,14 @@
     }
     .projectGrid {
         height: 100%;
+        max-height: 100%;
         width: 100%;
         display: grid;
         min-height: 0;
         min-width: 0;
         grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr min-content;
+        // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr min-content;
+        grid-template-rows: repeat(8, minmax(0, 1fr));
         .projectItem {
             justify-self: center;
             align-self: center;

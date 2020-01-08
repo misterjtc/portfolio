@@ -17,6 +17,7 @@
             h2 {
                 text-align: left;
                 margin-left: 100px;
+                font-weight: 600;
             }
         }
         .contactContent {
@@ -26,6 +27,7 @@
             align-items: center;
             .img {
                 width: 45%;
+                margin-right: 15px;
                 img {
                     width: 100%;
                 }
@@ -35,15 +37,46 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 flex-wrap: wrap;
-                input {
-                    padding: 10px 10px;
-                    margin: 25px 20px;
-                    border: none;
-                    border-bottom: 1px solid $linkBackground;
+                margin-left: 15px;
+                .contactInputs {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    input {
+                        padding: 10px 10px;
+                        margin: 25px 20px;
+                        border: none;
+                        border-bottom: 1px solid $linkBackground;
+                        &::placeholder {
+                            color: black;
+                        }
+                    }
+                    textarea {
+                        border: 1px solid $linkBackground;
+                        margin-top: 10px;
+                        width: 78%;
+                        &::placeholder {
+                            color: black;
+                        }
+                    }
                 }
-                textarea {
-                    width: 80%;
+                .contactSubmit {
+                    margin-top: 30px;
+                    input[type=submit] {
+                        background: $linkBackground;
+                        border-radius: 12px;
+                        color: white;
+                        padding: 15px 20px;
+                        border: 1px solid $linkBackground;
+                        transition: all 300ms linear;
+                        &:hover {
+                            background: white;
+                            color: $linkBackground;
+                        }
+                    }
                 }
             }
         }
