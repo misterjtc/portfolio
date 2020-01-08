@@ -1,6 +1,10 @@
-.projectsAndThings {
+#mainProjects {
     height: 230vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .projectSort {
         width: 100%;
         display: flex;

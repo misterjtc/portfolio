@@ -432,11 +432,24 @@ html input, html label, html textarea {
   font-weight: 700;
 }
 
-.projectsAndThings {
+#mainProjects {
   height: 230vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.projectsAndThings .projectSort {
+#mainProjects .projectSort {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,7 +461,7 @@ html input, html label, html textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-.projectsAndThings .projectSort ul {
+#mainProjects .projectSort ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,7 +475,7 @@ html input, html label, html textarea {
   padding: 0;
   margin: 20px;
 }
-.projectsAndThings .projectSort ul li {
+#mainProjects .projectSort ul li {
   border: 2px solid #272727;
   border-radius: 25px;
   margin: 0 15px;
@@ -470,7 +483,7 @@ html input, html label, html textarea {
   -o-transition: background 0.3s linear;
   transition: background 0.3s linear;
 }
-.projectsAndThings .projectSort ul li a {
+#mainProjects .projectSort ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 15px 20px;
@@ -479,13 +492,13 @@ html input, html label, html textarea {
   -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
-.projectsAndThings .projectSort ul li a:hover {
+#mainProjects .projectSort ul li a:hover {
   color: white;
 }
-.projectsAndThings .projectSort ul li:hover {
+#mainProjects .projectSort ul li:hover {
   background: #272727;
 }
-.projectsAndThings .projectGrid {
+#mainProjects .projectGrid {
   height: 100%;
   max-height: 100%;
   width: 100%;
@@ -498,199 +511,199 @@ html input, html label, html textarea {
   -ms-grid-rows: (minmax(0, 1fr))[8];
   grid-template-rows: repeat(8, minmax(0, 1fr));
 }
-.projectsAndThings .projectGrid > *:nth-child(1) {
+#mainProjects .projectGrid > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(2) {
+#mainProjects .projectGrid > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(3) {
+#mainProjects .projectGrid > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(4) {
+#mainProjects .projectGrid > *:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(5) {
+#mainProjects .projectGrid > *:nth-child(5) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(6) {
+#mainProjects .projectGrid > *:nth-child(6) {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid > *:nth-child(7) {
+#mainProjects .projectGrid > *:nth-child(7) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(8) {
+#mainProjects .projectGrid > *:nth-child(8) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(9) {
+#mainProjects .projectGrid > *:nth-child(9) {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(10) {
+#mainProjects .projectGrid > *:nth-child(10) {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(11) {
+#mainProjects .projectGrid > *:nth-child(11) {
   -ms-grid-row: 2;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(12) {
+#mainProjects .projectGrid > *:nth-child(12) {
   -ms-grid-row: 2;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid > *:nth-child(13) {
+#mainProjects .projectGrid > *:nth-child(13) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(14) {
+#mainProjects .projectGrid > *:nth-child(14) {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(15) {
+#mainProjects .projectGrid > *:nth-child(15) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(16) {
+#mainProjects .projectGrid > *:nth-child(16) {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(17) {
+#mainProjects .projectGrid > *:nth-child(17) {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(18) {
+#mainProjects .projectGrid > *:nth-child(18) {
   -ms-grid-row: 3;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid > *:nth-child(19) {
+#mainProjects .projectGrid > *:nth-child(19) {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(20) {
+#mainProjects .projectGrid > *:nth-child(20) {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(21) {
+#mainProjects .projectGrid > *:nth-child(21) {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(22) {
+#mainProjects .projectGrid > *:nth-child(22) {
   -ms-grid-row: 4;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(23) {
+#mainProjects .projectGrid > *:nth-child(23) {
   -ms-grid-row: 4;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(24) {
+#mainProjects .projectGrid > *:nth-child(24) {
   -ms-grid-row: 4;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid > *:nth-child(25) {
+#mainProjects .projectGrid > *:nth-child(25) {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(26) {
+#mainProjects .projectGrid > *:nth-child(26) {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(27) {
+#mainProjects .projectGrid > *:nth-child(27) {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(28) {
+#mainProjects .projectGrid > *:nth-child(28) {
   -ms-grid-row: 5;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(29) {
+#mainProjects .projectGrid > *:nth-child(29) {
   -ms-grid-row: 5;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(30) {
+#mainProjects .projectGrid > *:nth-child(30) {
   -ms-grid-row: 5;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid > *:nth-child(31) {
+#mainProjects .projectGrid > *:nth-child(31) {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(32) {
+#mainProjects .projectGrid > *:nth-child(32) {
   -ms-grid-row: 6;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(33) {
+#mainProjects .projectGrid > *:nth-child(33) {
   -ms-grid-row: 6;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(34) {
+#mainProjects .projectGrid > *:nth-child(34) {
   -ms-grid-row: 6;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(35) {
+#mainProjects .projectGrid > *:nth-child(35) {
   -ms-grid-row: 6;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(36) {
+#mainProjects .projectGrid > *:nth-child(36) {
   -ms-grid-row: 6;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid > *:nth-child(37) {
+#mainProjects .projectGrid > *:nth-child(37) {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(38) {
+#mainProjects .projectGrid > *:nth-child(38) {
   -ms-grid-row: 7;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(39) {
+#mainProjects .projectGrid > *:nth-child(39) {
   -ms-grid-row: 7;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(40) {
+#mainProjects .projectGrid > *:nth-child(40) {
   -ms-grid-row: 7;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(41) {
+#mainProjects .projectGrid > *:nth-child(41) {
   -ms-grid-row: 7;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(42) {
+#mainProjects .projectGrid > *:nth-child(42) {
   -ms-grid-row: 7;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid > *:nth-child(43) {
+#mainProjects .projectGrid > *:nth-child(43) {
   -ms-grid-row: 8;
   -ms-grid-column: 1;
 }
-.projectsAndThings .projectGrid > *:nth-child(44) {
+#mainProjects .projectGrid > *:nth-child(44) {
   -ms-grid-row: 8;
   -ms-grid-column: 2;
 }
-.projectsAndThings .projectGrid > *:nth-child(45) {
+#mainProjects .projectGrid > *:nth-child(45) {
   -ms-grid-row: 8;
   -ms-grid-column: 3;
 }
-.projectsAndThings .projectGrid > *:nth-child(46) {
+#mainProjects .projectGrid > *:nth-child(46) {
   -ms-grid-row: 8;
   -ms-grid-column: 4;
 }
-.projectsAndThings .projectGrid > *:nth-child(47) {
+#mainProjects .projectGrid > *:nth-child(47) {
   -ms-grid-row: 8;
   -ms-grid-column: 5;
 }
-.projectsAndThings .projectGrid > *:nth-child(48) {
+#mainProjects .projectGrid > *:nth-child(48) {
   -ms-grid-row: 8;
   -ms-grid-column: 6;
 }
-.projectsAndThings .projectGrid .projectItem {
+#mainProjects .projectGrid .projectItem {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -699,12 +712,12 @@ html input, html label, html textarea {
   height: 100%;
   width: 100%;
 }
-.projectsAndThings .projectGrid .projectItem .heroItem {
+#mainProjects .projectGrid .projectItem .heroItem {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.projectsAndThings .projectGrid .projectItem .heroItem .text {
+#mainProjects .projectGrid .projectItem .heroItem .text {
   position: absolute;
   top: 0;
   right: 0;
@@ -721,21 +734,21 @@ html input, html label, html textarea {
           align-items: center;
   color: white;
 }
-.projectsAndThings .projectGrid .projectItem .heroItem .text h3 {
+#mainProjects .projectGrid .projectItem .heroItem .text h3 {
   font-size: 2rem;
 }
-.projectsAndThings .projectGrid .projectItem .heroItem .img {
+#mainProjects .projectGrid .projectItem .heroItem .img {
   width: 100%;
   height: 100%;
 }
-.projectsAndThings .projectGrid .projectItem .heroItem .img img {
+#mainProjects .projectGrid .projectItem .heroItem .img img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.projectsAndThings .projectGrid #projectThingCam {
+#mainProjects .projectGrid #projectThingCam {
   position: relative;
   margin: 0;
   -ms-grid-column: 1;
@@ -745,34 +758,34 @@ html input, html label, html textarea {
   -ms-grid-row-span: 2;
   grid-row: 1/3;
 }
-.projectsAndThings .projectGrid #projectThingCam .slick-track {
+#mainProjects .projectGrid #projectThingCam .slick-track {
   height: 100%;
 }
-.projectsAndThings .projectGrid #projectThingCam .slick-list {
+#mainProjects .projectGrid #projectThingCam .slick-list {
   height: 100% !important;
 }
-.projectsAndThings .projectGrid #projectThingCam .slick-dots {
+#mainProjects .projectGrid #projectThingCam .slick-dots {
   bottom: 10px;
   left: 0;
 }
-.projectsAndThings .projectGrid #projectThingCam .slick-dots li button:before {
+#mainProjects .projectGrid #projectThingCam .slick-dots li button:before {
   color: white;
   font-size: 1.2rem;
 }
-.projectsAndThings .projectGrid #projectThingCam .slick-next {
+#mainProjects .projectGrid #projectThingCam .slick-next {
   bottom: 0;
   right: 35px;
 }
-.projectsAndThings .projectGrid #projectThingCam .slick-prev {
+#mainProjects .projectGrid #projectThingCam .slick-prev {
   bottom: 0;
   left: 10px;
   z-index: 999999;
 }
-.projectsAndThings .projectGrid #projectThingCam .slick-arrow:before {
+#mainProjects .projectGrid #projectThingCam .slick-arrow:before {
   font-size: 4rem;
   color: white;
 }
-.projectsAndThings .projectGrid #project2 {
+#mainProjects .projectGrid #project2 {
   height: 100%;
   width: 100%;
   -ms-grid-column: 4;
@@ -782,7 +795,7 @@ html input, html label, html textarea {
   -ms-grid-row-span: 4;
   grid-row: 1/5;
 }
-.projectsAndThings .projectGrid #project3 {
+#mainProjects .projectGrid #project3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -790,7 +803,7 @@ html input, html label, html textarea {
   -ms-grid-row-span: 2;
   grid-row: 3/5;
 }
-.projectsAndThings .projectGrid #project4 {
+#mainProjects .projectGrid #project4 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -798,7 +811,7 @@ html input, html label, html textarea {
   -ms-grid-row-span: 2;
   grid-row: 5/7;
 }
-.projectsAndThings .projectGrid #project5 {
+#mainProjects .projectGrid #project5 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3/5;
@@ -806,7 +819,7 @@ html input, html label, html textarea {
   -ms-grid-row-span: 2;
   grid-row: 5/7;
 }
-.projectsAndThings .projectGrid #project6 {
+#mainProjects .projectGrid #project6 {
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-column: 5/7;
@@ -814,7 +827,7 @@ html input, html label, html textarea {
   -ms-grid-row-span: 2;
   grid-row: 5/7;
 }
-.projectsAndThings .projectGrid #project7 {
+#mainProjects .projectGrid #project7 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -822,7 +835,7 @@ html input, html label, html textarea {
   -ms-grid-row-span: 2;
   grid-row: 7/9;
 }
-.projectsAndThings .projectGrid #project8 {
+#mainProjects .projectGrid #project8 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-column: 4/7;
