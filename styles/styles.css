@@ -1034,6 +1034,7 @@ html input, html label, html textarea {
   text-align: left;
   margin-left: 100px;
   font-weight: 600;
+  font-size: 7rem;
 }
 #contact .wrapper .contactContent {
   display: -webkit-box;
@@ -1049,6 +1050,8 @@ html input, html label, html textarea {
 #contact .wrapper .contactContent .img {
   width: 45%;
   margin-right: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #contact .wrapper .contactContent .img img {
   width: 100%;
@@ -1109,7 +1112,9 @@ html input, html label, html textarea {
 #contact .wrapper .contactContent form .contactInputs textarea {
   border: 1px solid #272727;
   margin-top: 10px;
-  width: 78%;
+  width: 81%;
+  border-radius: 12px;
+  padding: 12px;
 }
 #contact .wrapper .contactContent form .contactInputs textarea::-webkit-input-placeholder {
   color: black;
@@ -1126,11 +1131,19 @@ html input, html label, html textarea {
 #contact .wrapper .contactContent form .contactInputs textarea::placeholder {
   color: black;
 }
+#contact .wrapper .contactContent form .contactInputs input[name=contactName] {
+  margin-top: 0;
+}
+#contact .wrapper .contactContent form .contactInputs input[name=contactEmail] {
+  margin-top: 0;
+}
 #contact .wrapper .contactContent form .contactSubmit {
-  margin-top: 30px;
+  margin-top: 15px;
+  width: 81%;
 }
 #contact .wrapper .contactContent form .contactSubmit input[type=submit] {
   background: #272727;
+  width: 100%;
   border-radius: 12px;
   color: white;
   padding: 15px 20px;
