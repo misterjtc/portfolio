@@ -2,7 +2,8 @@
 $(document).ready(function() {
     // Check if the DOM function is ready
     console.log("I'm Ready")
-    // Initialize slick slider
+    // Initialize slick sliders
+    // Project thing cam
     $('#projectThingCam').slick({
         dots: true,
         speed: 500,
@@ -12,6 +13,36 @@ $(document).ready(function() {
         // centerPadding: 0,
         adaptiveHeight: true,
     });
+    // projet car mount
+    $('#projectCarMount').slick({
+      dots: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      // centerMode: true,
+      // centerPadding: 0,
+      adaptiveHeight: true,
+  });
+  // project bogger rc tire
+  $('#projectBogger').slick({
+    dots: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    // centerMode: true,
+    // centerPadding: 0,
+    adaptiveHeight: true,
+  });
+  // project headphone cable manager
+  $('#projectHeadphoneCable').slick({
+    dots: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    // centerMode: true,
+    // centerPadding: 0,
+    adaptiveHeight: true,
+  });
     // Smoothscrool for main section links
     $('.thisIsMeButton').on('click', function() {
       $.smoothScroll({
