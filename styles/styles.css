@@ -711,13 +711,79 @@ html input, html label, html textarea {
       align-self: center;
   height: 100%;
   width: 100%;
+  position: relative;
+  margin: 0;
 }
-#mainProjects .projectGrid .projectItem .heroItem {
+#mainProjects .projectGrid .projectItem .hoverProjectSplash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+#mainProjects .projectGrid .projectItem .hoverProjectSplash h3 {
+  margin: 15px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+#mainProjects .projectGrid .projectItem .hoverProjectContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 6.5%;
+  left: 6.5%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 20;
+}
+#mainProjects .projectGrid .projectItem .hoverProjectContainer:hover + .hoverProjectSplash {
+  opacity: 1;
+}
+#mainProjects .projectGrid .projectItem .projectLinker {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  z-index: 11;
+}
+#mainProjects .projectGrid .projectItem .projectLinker.instagram {
+  color: white;
+}
+#mainProjects .projectGrid .projectItem .projectLinker.instagram i {
+  font-size: 3rem;
+}
+#mainProjects .projectGrid .projectItem .projectLinker.thingiverse svg {
+  height: 35px;
+  width: 35px;
+  fill: white;
+}
+#mainProjects .projectGrid .projectItem .projectHero {
+  width: 100%;
+  height: 100%;
+}
+#mainProjects .projectGrid .projectItem .projectHero .heroItem {
   width: 100%;
   height: 100%;
   position: relative;
 }
-#mainProjects .projectGrid .projectItem .heroItem .text {
+#mainProjects .projectGrid .projectItem .projectHero .heroItem .text {
   position: absolute;
   top: 0;
   right: 0;
@@ -734,52 +800,49 @@ html input, html label, html textarea {
           align-items: center;
   color: white;
 }
-#mainProjects .projectGrid .projectItem .heroItem .text h3 {
+#mainProjects .projectGrid .projectItem .projectHero .heroItem .text h3 {
   font-size: 2rem;
 }
-#mainProjects .projectGrid .projectItem .heroItem .img {
+#mainProjects .projectGrid .projectItem .projectHero .heroItem .img {
   width: 100%;
   height: 100%;
 }
-#mainProjects .projectGrid .projectItem .heroItem .img img {
+#mainProjects .projectGrid .projectItem .projectHero .heroItem .img img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#mainProjects .projectGrid .projectItem {
-  margin: 0;
-}
-#mainProjects .projectGrid .projectItem .slick-track {
+#mainProjects .projectGrid .projectItem .projectHero .slick-track {
   height: 100%;
 }
-#mainProjects .projectGrid .projectItem .slick-list {
+#mainProjects .projectGrid .projectItem .projectHero .slick-list {
   height: 100% !important;
 }
-#mainProjects .projectGrid .projectItem .slick-dots {
+#mainProjects .projectGrid .projectItem .projectHero .slick-dots {
   bottom: 10px;
   left: 0;
 }
-#mainProjects .projectGrid .projectItem .slick-dots li button:before {
+#mainProjects .projectGrid .projectItem .projectHero .slick-dots li button:before {
   color: white;
   font-size: 1.2rem;
 }
-#mainProjects .projectGrid .projectItem .slick-next {
+#mainProjects .projectGrid .projectItem .projectHero .slick-next {
   bottom: 0;
   right: 35px;
+  z-index: 999999;
 }
-#mainProjects .projectGrid .projectItem .slick-prev {
+#mainProjects .projectGrid .projectItem .projectHero .slick-prev {
   bottom: 0;
   left: 10px;
   z-index: 999999;
 }
-#mainProjects .projectGrid .projectItem .slick-arrow:before {
+#mainProjects .projectGrid .projectItem .projectHero .slick-arrow:before {
   font-size: 4rem;
   color: white;
 }
 #mainProjects .projectGrid #projectThingCam {
-  position: relative;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -796,6 +859,10 @@ html input, html label, html textarea {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   grid-row: 1/5;
+}
+#mainProjects .projectGrid #project2 .projectLinker svg {
+  background-size: 50px 50px;
+  fill: white;
 }
 #mainProjects .projectGrid #projectCarMount {
   -ms-grid-column: 1;
