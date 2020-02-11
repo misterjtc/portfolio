@@ -90,6 +90,15 @@
                     &:hover {
                         color: darken($lightText, 50%);
                     }
+                    &:hover svg {
+                        fill: darken($lightText, 50%);
+                    }
+                }
+                svg {
+                    height: 28px;
+                    width: 28px;
+                    fill: $lightText;
+                    transition: fill 0.3s ease-in;
                 }
             }
         }

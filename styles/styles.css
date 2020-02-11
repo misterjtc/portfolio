@@ -414,6 +414,17 @@ html input, html label, html textarea {
 #splash .socialLinks ul li a:hover {
   color: gray;
 }
+#splash .socialLinks ul li a:hover svg {
+  fill: gray;
+}
+#splash .socialLinks ul li svg {
+  height: 28px;
+  width: 28px;
+  fill: white;
+  -webkit-transition: fill 0.3s ease-in;
+  -o-transition: fill 0.3s ease-in;
+  transition: fill 0.3s ease-in;
+}
 #splash .headerBold {
   color: #706f6f;
   font-size: 8rem;
@@ -906,17 +917,27 @@ html input, html label, html textarea {
   bottom: 5px;
   right: 15px;
   z-index: 11;
-}
-#mainProjects .projectGrid .projectItem .projectLinker.instagram {
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
   color: white;
 }
-#mainProjects .projectGrid .projectItem .projectLinker.instagram i {
+#mainProjects .projectGrid .projectItem .projectLinker:hover {
+  color: #b3b3b3;
+}
+#mainProjects .projectGrid .projectItem .projectLinker i {
   font-size: 3rem;
 }
-#mainProjects .projectGrid .projectItem .projectLinker.thingiverse svg {
+#mainProjects .projectGrid .projectItem .projectLinker svg {
   height: 35px;
   width: 35px;
   fill: white;
+  -webkit-transition: fill 0.3s ease-in;
+  -o-transition: fill 0.3s ease-in;
+  transition: fill 0.3s ease-in;
+}
+#mainProjects .projectGrid .projectItem .projectLinker svg:hover {
+  fill: #b3b3b3;
 }
 #mainProjects .projectGrid .projectItem .projectHero {
   width: 100%;
@@ -1098,7 +1119,7 @@ html input, html label, html textarea {
 #mainProjects .projectGrid #projectUtahDrone video {
   width: 100%;
 }
-#mainProjects .projectGrid #project12 {
+#mainProjects .projectGrid #projectMarine {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3/5;
@@ -1330,7 +1351,7 @@ html input, html label, html textarea {
           align-items: center;
 }
 #contact .wrapper .contactContent .img {
-  width: 45%;
+  width: 48%;
   margin-right: 15px;
   -o-object-fit: cover;
      object-fit: cover;

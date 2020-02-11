@@ -92,19 +92,29 @@
                 bottom: 5px;
                 right: 15px;
                 z-index: 11;
-            }
-            .projectLinker.instagram {
+                transition: color 0.3s ease-in;
                 color: white;
+                &:hover {
+                    color: darken($lightText, 30%);
+                }
                 i {
                     font-size: 3rem;
                 }
-            }
-            .projectLinker.thingiverse {
                 svg {
                     height: 35px;
                     width: 35px;
                     fill: white;
+                    transition: fill 0.3s ease-in;
+                    &:hover {
+                        fill: darken($lightText, 30%);
+                    }
                 }
+            }
+            .projectLinker.instagram {
+
+            }
+            .projectLinker.thingiverse {
+
             }
             .projectHero {
                 width: 100%;
@@ -251,7 +261,7 @@
                 width: 100%;
             }
         }
-        #project12 {
+        #projectMarine {
             grid-column: 3 / 5;
             grid-row: 9 / 11;
             background: dodgerblue;
