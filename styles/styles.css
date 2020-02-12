@@ -397,6 +397,9 @@ html input, html label, html textarea {
 #splash .socialLinks ul {
   list-style: none;
 }
+#splash .socialLinks ul li:nth-child(2) a {
+  padding: 11px 14px 9px 14px;
+}
 #splash .socialLinks ul li {
   text-decoration: none;
   background: #272727;
@@ -406,7 +409,7 @@ html input, html label, html textarea {
 #splash .socialLinks ul li a {
   display: block;
   color: white;
-  padding: 15px 18px;
+  padding: 13px 14px;
   -webkit-transition: color 0.3s ease-in;
   -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
@@ -417,7 +420,7 @@ html input, html label, html textarea {
 #splash .socialLinks ul li a:hover svg {
   fill: gray;
 }
-#splash .socialLinks ul li svg {
+#splash .socialLinks ul li a svg {
   height: 28px;
   width: 28px;
   fill: white;
@@ -1024,6 +1027,11 @@ html input, html label, html textarea {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   grid-row: 1/5;
+  background: #c7c7c7;
+}
+#mainProjects .projectGrid #project2 .projectHero .heroItem .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #mainProjects .projectGrid #project2 .projectLinker svg {
   background-size: 50px 50px;
@@ -1096,10 +1104,14 @@ html input, html label, html textarea {
   -ms-grid-row: 11;
   -ms-grid-row-span: 2;
   grid-row: 11/13;
-  background: palegoldenrod;
+  background: white;
 }
 #mainProjects .projectGrid #projectDashboard .projectHero .slick-dots li button:before {
   color: #999999;
+}
+#mainProjects .projectGrid #projectDashboard .projectHero .heroItem .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #mainProjects .projectGrid #projectDashboard .slick-arrow:before {
   font-size: 4rem;
@@ -1150,7 +1162,7 @@ html input, html label, html textarea {
   grid-row: 9/11;
   background: crimson;
 }
-#mainProjects .projectGrid #project14 {
+#mainProjects .projectGrid #projectHomeServer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -1280,6 +1292,7 @@ html input, html label, html textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 15px 0;
 }
 #thisIsMe .meListContainer .backgroundContainer .theList div .icon {
   padding: 28px 55px;
