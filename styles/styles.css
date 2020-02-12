@@ -1098,6 +1098,19 @@ html input, html label, html textarea {
   grid-row: 11/13;
   background: palegoldenrod;
 }
+#mainProjects .projectGrid #projectDashboard .projectHero .slick-dots li button:before {
+  color: #999999;
+}
+#mainProjects .projectGrid #projectDashboard .slick-arrow:before {
+  font-size: 4rem;
+  color: #999999;
+}
+#mainProjects .projectGrid #projectDashboard .projectLinker {
+  color: #999999;
+}
+#mainProjects .projectGrid #projectDashboard .projectLinker:hover {
+  color: #4d4d4d;
+}
 #mainProjects .projectGrid #projectLightArm {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;

@@ -4,7 +4,7 @@ $(document).ready(function() {
     console.log("I'm Ready")
     // Initialize slick sliders
     // Project thing cam
-    $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero').slick({
+    $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero').slick({
         dots: true,
         speed: 500,
         autoplay: true,
@@ -12,6 +12,7 @@ $(document).ready(function() {
         // centerMode: true,
         // centerPadding: 0,
         adaptiveHeight: true,
+        pauseOnHover:true
     });
     // Smoothscrool for main section links
     $('.thisIsMeButton').on('click', function() {

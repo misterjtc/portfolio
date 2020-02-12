@@ -242,11 +242,35 @@
                     }
                 }
             }
+
         }
         #projectDashboard {
             grid-column: 1 / 4;
             grid-row: 11 / 13;
             background: palegoldenrod;
+            .projectHero {
+                .slick-dots {
+                    li {
+                        button {
+                            &:before {
+                                color: $medText;
+                            }
+                        }
+                    }
+                }
+            }
+            .slick-arrow {
+                &:before {
+                    font-size: 4rem;
+                    color: $medText;
+                }
+            }
+            .projectLinker {
+                color: $medText;
+                &:hover {
+                    color: darken($medText, 30%);
+                }
+            }
         }
         #projectLightArm {
             grid-column: 4 / 7;
