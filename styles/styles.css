@@ -288,22 +288,22 @@ html .hideElement {
 
 @media (max-width: 768px) {
   html h1 {
-    font-size: 4rem;
+    font-size: 4rem !important;
   }
   html h2 {
-    font-size: 3rem;
+    font-size: 2.6rem !important;
   }
   html h3 {
-    font-size: 2rem;
+    font-size: 1.5rem !important;
   }
   html h4 {
-    font-size: 1.8rem;
+    font-size: 1.4rem !important;
   }
   html p {
-    font-size: 1.5rem;
+    font-size: 1rem !important;
   }
   html a {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
   html i {
     font-size: 1.2rem;
@@ -320,13 +320,13 @@ html .hideElement {
     font-size: 3rem;
   }
   html h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   html h4 {
     font-size: 1.5rem;
   }
   html p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   html a {
     font-size: 1.2rem;
@@ -1527,6 +1527,31 @@ html .hideElement {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  #thisIsMe #me .backgroundContainer .theList div {
+    margin: 15px 0;
+  }
+  #thisIsMe .meListContainer .backgroundContainer .theList div {
+    width: 33%;
+    margin: 7px 0;
+  }
+  #thisIsMe .meListContainer .backgroundContainer .theList div .icon {
+    padding: 21px 35px !important;
+    border-radius: 50px !important;
+  }
+  #thisIsMe .meListContainer .backgroundContainer .theList div .icon i {
+    font-size: 2.8rem !important;
+  }
+}
+@media (max-width: 992px) {
+  #thisIsMe .meListContainer .backgroundContainer .theList div .icon {
+    padding: 23px 40px;
+    border-radius: 50px;
+  }
+  #thisIsMe .meListContainer .backgroundContainer .theList div .icon i {
+    font-size: 3.5rem;
+  }
+}
 #contact {
   height: 100vh;
   width: 100%;

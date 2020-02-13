@@ -62,25 +62,25 @@ html {
 @media (max-width: $md) {
     html {
         h1 {
-            font-size: $h1Mobile;
+            font-size: $h1Mobile !important;
         }
         h2 {
-            font-size: $h2Mobile;
+            font-size: $h2Mobile !important;
         }
         h3 {
-            font-size: $h3Mobile;
+            font-size: $h3Mobile !important;
         }
         h4 {
-            font-size: $h4Mobile;
+            font-size: $h4Mobile !important;
         }
         p {
-            font-size: $pMobile;
+            font-size: $pMobile !important;
         }
         a {
-            font-size: $aMobile;
+            font-size: $aMobile !important;
         }
         i {
-            font-size: $iMobile;
+            font-size: $iMobile ;
         }
         input, label, textarea {
             font-size: $inputDesk;

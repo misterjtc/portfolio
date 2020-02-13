@@ -61,12 +61,11 @@ $(document).ready(function() {
     $(".headerMobileNavLink").on("click", function(){
       var $navHeight = $('.mainLinks').height();
       console.log($navHeight);
-      // If the nav bar is less than 100px, expand it and do some formatting
+      // If the nav bar has class navCheck collapse it - else expand it
       if ( $('.mainLinks').hasClass("navCheck") ) {
       // collapse nav
         $('.mainLinks').animate({height: "50px"}, 400, "linear");
         $('.mainLinks').removeClass('navCheck');
-        // $('.mobileList').addClass('hideElement');
         $(".mobileList").fadeOut( "fast", function() {
           // Animation complete
         });

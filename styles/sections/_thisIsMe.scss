@@ -122,3 +122,46 @@
         background-size: cover;
     }
 }
+// About me media queries
+@media (min-width: $sm) {
+
+}
+@media (max-width: $md) {
+    #thisIsMe {
+        #me .backgroundContainer .theList div {
+            margin: 15px 0;
+        }
+        .meListContainer .backgroundContainer {
+            .theList {
+                div {
+                    width: 33%;
+                    margin: 7px 0;
+                    .icon {
+                        padding: 21px 35px !important;
+                        border-radius: 50px !important;
+                        i {
+                            font-size: 2.8rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: $lg) {
+    #thisIsMe .meListContainer .backgroundContainer {
+        .theList div .icon {
+            padding: 23px 40px;
+            border-radius: 50px;
+            i {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+}
+@media (min-width: $lg) {
+
+}
+@media (max-width: $xl) {
+}
