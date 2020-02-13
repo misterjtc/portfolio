@@ -262,12 +262,20 @@ html p {
 }
 html a {
   font-size: 1.5rem;
+  text-decoration: none;
 }
 html i {
   font-size: 2.5rem;
 }
 html input, html label, html textarea {
   font-size: 1.8rem;
+}
+html ul {
+  padding: 0;
+  margin: 0;
+}
+html .hideElement {
+  display: none !important;
 }
 
 .uppercase {
@@ -276,9 +284,65 @@ html input, html label, html textarea {
 
 .main {
   width: 100%;
-  height: 100vh;
 }
 
+@media (max-width: 768px) {
+  html h1 {
+    font-size: 4rem;
+  }
+  html h2 {
+    font-size: 3rem;
+  }
+  html h3 {
+    font-size: 2rem;
+  }
+  html h4 {
+    font-size: 1.8rem;
+  }
+  html p {
+    font-size: 1.5rem;
+  }
+  html a {
+    font-size: 1.2rem;
+  }
+  html i {
+    font-size: 1.2rem;
+  }
+  html input, html label, html textarea {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 992px) {
+  html h1 {
+    font-size: 4.4rem;
+  }
+  html h2 {
+    font-size: 3rem;
+  }
+  html h3 {
+    font-size: 2rem;
+  }
+  html h4 {
+    font-size: 1.5rem;
+  }
+  html p {
+    font-size: 1.5rem;
+  }
+  html a {
+    font-size: 1.2rem;
+  }
+  html i {
+    font-size: 1.8rem;
+  }
+  html input, html label, html textarea {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1200px) {
+  html h1 {
+    font-size: 4.4rem;
+  }
+}
 #splash {
   background: url(../../assets/x-home-main-bg-cornerstone.jpg) no-repeat center;
   background-size: cover;
@@ -318,17 +382,56 @@ html input, html label, html textarea {
 #splash .whoDidIt p {
   font-size: 1.3rem;
 }
+#splash .headerMainText {
+  z-index: 1;
+}
 #splash .mainLinks {
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-}
-#splash .mainLinks ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   height: 50px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#splash .mainLinks a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #706f6f;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #171717;
+  text-shadow: 0 -1px 0 #292929;
+  -webkit-box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.065);
+          box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.065);
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#splash .mainLinks a:hover {
+  color: #efefef;
+}
+#splash .mainLinks .deskList {
+  list-style: none;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,7 +439,7 @@ html input, html label, html textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#splash .mainLinks ul li {
+#splash .mainLinks .deskList li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +453,25 @@ html input, html label, html textarea {
   width: 25%;
   background: #272727;
 }
-#splash .mainLinks ul li a {
+#splash .mainLinks .mobileList {
+  display: none;
+  position: absolute;
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+#splash .mainLinks .mobileList li {
+  list-style: none;
+  margin: 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,21 +481,48 @@ html input, html label, html textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
+}
+#splash .mainLinks .mobileList li a {
   color: #706f6f;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border-right: none;
+  padding: 12px 5px;
+  background: #272727;
+  border-radius: 10px;
+}
+#splash .mainLinks .mobileList li a:hover {
+  color: white;
+  background: #414141;
+}
+#splash .mainLinks .mobileNav {
+  display: none;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 45px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#splash .mainLinks .mobileNav li {
   width: 100%;
   height: 100%;
-  white-space: nowrap;
-  border-right: 1px solid #171717;
-  text-shadow: 0 -1px 0 #292929;
-  -webkit-box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.065);
-          box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.065);
-  -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in;
+  list-style: none;
 }
-#splash .mainLinks ul li a:hover {
-  color: #efefef;
+#splash .mainLinks .mobileNav li a {
+  background: #343434;
+  border-radius: 10px;
+  padding: 10px;
 }
 #splash .socialLinks {
   position: absolute;
@@ -392,7 +540,7 @@ html input, html label, html textarea {
       -ms-flex-align: center;
           align-items: center;
   right: 45px;
-  top: 32%;
+  top: 35%;
 }
 #splash .socialLinks ul {
   list-style: none;
@@ -401,7 +549,6 @@ html input, html label, html textarea {
   padding: 11px 14px 9px 14px;
 }
 #splash .socialLinks ul li {
-  text-decoration: none;
   background: #272727;
   margin: 10px 0;
   border-radius: 10px;
@@ -446,6 +593,61 @@ html input, html label, html textarea {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  #splash .headerBold {
+    font-size: 4.5rem !important;
+  }
+  #splash h1 {
+    font-size: 3.5rem;
+    width: 60%;
+  }
+  #splash .whoDidIt p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  #splash .headerBold {
+    font-size: 5.8rem;
+  }
+  #splash .socialLinks ul li a svg {
+    height: 18px;
+    width: 18px;
+  }
+  #splash .mainLinks {
+    background: #272727;
+  }
+  #splash .mainLinks .deskList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #splash .mainLinks .deskList li {
+    display: none;
+  }
+  #splash .mainLinks .mobileNav {
+    display: block;
+  }
+  #splash .socialLinks {
+    right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #splash .mainLinks {
+    height: 50px !important;
+  }
+  #splash .mainLinks .mobileNav {
+    display: none;
+  }
+  #splash .mainLinks .mobileList {
+    display: none !important;
+  }
+}
+@media (max-width: 1200px) {
+  #splash .headerBold {
+    font-size: 5.8rem;
+  }
+}
 #mainProjects {
   height: 370vh;
   width: 100%;

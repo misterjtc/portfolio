@@ -1,4 +1,4 @@
-// This is the main site js file
+// This is the mainLinks site js file
 $(document).ready(function() {
     // Check if the DOM function is ready
     console.log("I'm Ready")
@@ -12,9 +12,9 @@ $(document).ready(function() {
         // centerMode: true,
         // centerPadding: 0,
         adaptiveHeight: true,
-        pauseOnHover:true
+        pauseOnHover: true
     });
-    // Smoothscrool for main section links
+    // Smoothscrool for mainLinks section links
     $('.thisIsMeButton').on('click', function() {
       $.smoothScroll({
         scrollTarget: '#thisIsMe',
@@ -57,4 +57,26 @@ $(document).ready(function() {
         speed: 800
       })
     })
+    // Mobile nav menu actuation
+    $(".headerMobileNavLink").on("click", function(){
+      var $navHeight = $('.mainLinks').height();
+      console.log($navHeight);
+      // If the nav bar is less than 100px, expand it and do some formatting
+      if ( $('.mainLinks').hasClass("navCheck") ) {
+      // collapse nav
+        $('.mainLinks').animate({height: "50px"}, 400, "linear");
+        $('.mainLinks').removeClass('navCheck');
+        // $('.mobileList').addClass('hideElement');
+        $(".mobileList").fadeOut( "fast", function() {
+          // Animation complete
+        });
+      } else {
+        // expand nav
+        $('.mainLinks').animate({height: "300px"}, 400, "linear");
+        $('.mainLinks').addClass('navCheck');
+        $(".mobileList").fadeIn( "fast", function() {
+          // Animation complete
+        });
+      }
+    });
 });
