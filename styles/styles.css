@@ -885,7 +885,7 @@ html .hideElement {
   -ms-grid-row-span: 4;
   grid-row: span 4;
 }
-#mainProjects .projectGrid #project2 {
+#mainProjects .projectGrid #projectMakerspace {
   height: 100%;
   width: 100%;
   -ms-grid-column-span: 3;
@@ -894,11 +894,11 @@ html .hideElement {
   grid-row: span 8;
   background: #c7c7c7;
 }
-#mainProjects .projectGrid #project2 .projectHero .heroItem .img img {
+#mainProjects .projectGrid #projectMakerspace .projectHero .heroItem .img img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#mainProjects .projectGrid #project2 .projectLinker svg {
+#mainProjects .projectGrid #projectMakerspace .projectLinker svg {
   background-size: 50px 50px;
   fill: white;
 }
@@ -925,7 +925,8 @@ html .hideElement {
   grid-column: span 3;
   -ms-grid-row-span: 4;
   grid-row: span 4;
-  height: 550px;
+  height: 100%;
+  width: 100%;
 }
 #mainProjects .projectGrid #projectCulture .hoverProjectContainer {
   right: 8.5%;
@@ -1002,10 +1003,6 @@ html .hideElement {
   #mainProjects {
     height: 700vh;
   }
-  #mainProjects .projectGrid .photoInsta {
-    -ms-grid-column-span: 3 !important;
-    grid-column: span 3 !important;
-  }
   #mainProjects .projectGrid #projectBogger .projectHero .heroItem .img img {
     -o-object-fit: contain;
        object-fit: contain;
@@ -1014,6 +1011,10 @@ html .hideElement {
 @media (max-width: 1200px) {
   #mainProjects {
     height: 850vh;
+  }
+  #mainProjects .projectGrid .photoInsta {
+    -ms-grid-column-span: 3 !important;
+    grid-column: span 3 !important;
   }
 }
 #thisIsMe {
@@ -1355,6 +1356,29 @@ html .hideElement {
   color: #272727;
 }
 
+@media (max-width: 992px) {
+  #contact .wrapper .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .wrapper .contactContent .img {
+    width: 55%;
+  }
+  #contact .wrapper .contactContent form {
+    width: 70%;
+    margin-left: 0;
+  }
+  #contact .wrapper .contactContent form .contactInputs textarea {
+    width: 88%;
+  }
+}
+@media (max-width: 1200px) {
+  #contact .wrapper {
+    width: 90%;
+  }
+}
 footer {
   height: 15vh;
   width: 100%;

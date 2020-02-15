@@ -186,7 +186,7 @@
             grid-column: span 3 ;
             grid-row: span 4;
         }
-        #project2 {
+        #projectMakerspace {
             height: 100%;
             width: 100%;
             grid-column: span 3;
@@ -223,8 +223,8 @@
         #projectCulture {
             grid-column: span 3;
             grid-row: span 4;
-            height: 550px;
-            // width: 870px;
+            height: 100%;
+            width: 100%;
             .hoverProjectContainer {
                 right: 8.5%;
                 left: 8.5%;
@@ -332,7 +332,6 @@
             .photoInsta {
                 grid-column: span 3 !important;
             }
+        }
     }
-
 }
-

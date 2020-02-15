@@ -94,3 +94,31 @@
         }
     }
 }
+// contact section media queries
+@media (max-width: $lg) {
+    #contact {
+        .wrapper .contactContent {
+            flex-direction: column;
+            .img {
+                width: 55%;
+            }
+            form {
+                width: 70%;
+                margin-left: 0;
+                .contactInputs {
+                    textarea {
+                        width: 88%;
+                    }
+                }
+            }
+    
+        }  
+    } 
+}
+@media (max-width: $xl) {
+    #contact {
+        .wrapper {
+            width: 90%;
+        }
+    }
+}
