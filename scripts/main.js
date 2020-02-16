@@ -4,7 +4,7 @@ $(document).ready(function() {
     console.log("I'm Ready")
     // Initialize slick sliders
     // Project thing cam
-    $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero').slick({
+    $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero, #lightarmHero, #selfieStickHero, #piHoleHero, #homeServerHero').slick({
         dots: true,
         speed: 500,
         autoplay: true,

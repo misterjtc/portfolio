@@ -186,6 +186,11 @@
             grid-column: span 3 ;
             grid-row: span 4;
         }
+        #projectLightArm {
+            grid-column: span 3;
+            grid-row: span 8;
+            background: navajowhite;
+        }
         #projectMakerspace {
             height: 100%;
             width: 100%;
@@ -280,11 +285,6 @@
                 }
             }
         }
-        #projectLightArm {
-            grid-column: span 3;
-            grid-row: span 7;
-            background: navajowhite;
-        }
         #projectUtahDrone {
             grid-column: span 2;
             grid-row: span 3;
@@ -301,6 +301,14 @@
             grid-row: span 3;
         }
         #projectHomeServer {
+            grid-column: span 3;
+            grid-row: span 4;
+        }
+        #projectPiHole {
+            grid-column: span 3;
+            grid-row: span 4;
+        }
+        #projectSelfieStick {
             grid-column: span 3;
             grid-row: span 4;
         }

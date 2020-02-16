@@ -885,6 +885,13 @@ html .hideElement {
   -ms-grid-row-span: 4;
   grid-row: span 4;
 }
+#mainProjects .projectGrid #projectLightArm {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+  -ms-grid-row-span: 8;
+  grid-row: span 8;
+  background: navajowhite;
+}
 #mainProjects .projectGrid #projectMakerspace {
   height: 100%;
   width: 100%;
@@ -964,13 +971,6 @@ html .hideElement {
 #mainProjects .projectGrid #projectDashboard .projectLinker:hover {
   color: #4d4d4d;
 }
-#mainProjects .projectGrid #projectLightArm {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 7;
-  grid-row: span 7;
-  background: navajowhite;
-}
 #mainProjects .projectGrid #projectUtahDrone {
   -ms-grid-column-span: 2;
   grid-column: span 2;
@@ -993,6 +993,18 @@ html .hideElement {
   grid-row: span 3;
 }
 #mainProjects .projectGrid #projectHomeServer {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+  -ms-grid-row-span: 4;
+  grid-row: span 4;
+}
+#mainProjects .projectGrid #projectPiHole {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+  -ms-grid-row-span: 4;
+  grid-row: span 4;
+}
+#mainProjects .projectGrid #projectSelfieStick {
   -ms-grid-column-span: 3;
   grid-column: span 3;
   -ms-grid-row-span: 4;
