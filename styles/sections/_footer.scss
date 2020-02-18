@@ -76,3 +76,16 @@ footer {
     }
 
 }
+// Footer media queries
+@media (max-width: $sm) {
+    footer .wrapper .footerLinks ul li a {
+        height: 28px !important;
+        width: 28px !important;
+    }
+}
+@media (max-width: $lg) {
+    footer .wrapper .footerLinks ul li a {
+        height: 35px;
+        width: 35px;
+    }
+}

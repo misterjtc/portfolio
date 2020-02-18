@@ -56,10 +56,7 @@ html {
 @media (min-width: 0) and (max-width: $sm) {
 
 }
-@media (min-width: $sm) {
-
-}
-@media (max-width: $md) {
+@media (max-width: $sm) {
     html {
         h1 {
             font-size: $h1Mobile !important;
@@ -80,12 +77,15 @@ html {
             font-size: $aMobile !important;
         }
         i {
-            font-size: $iMobile ;
+            font-size: $iMobile !important;
         }
         input, label, textarea {
-            font-size: $inputDesk;
+            font-size: $inputMobile !important;
         }
     }
+}
+@media (max-width: $md) {
+
 }
 @media (max-width: $lg) {
     html {

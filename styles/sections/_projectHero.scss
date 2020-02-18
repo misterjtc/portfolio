@@ -1,5 +1,5 @@
 #mainProjects {
-    height: 475vh;
+    height: 450vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
         min-width: 0;
         // grid-template-columns: repeat(6, minmax(0, 1fr));
         grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-        grid-template-rows: repeat(25, minmax(0, 1fr));
+        grid-template-rows: repeat(25, minmax(100px, 1fr));
         grid-auto-flow: dense;
         .projectItem {
             justify-self: center;
@@ -189,7 +189,6 @@
         #projectLightArm {
             grid-column: span 3;
             grid-row: span 8;
-            background: navajowhite;
         }
         #projectMakerspace {
             height: 100%;
@@ -314,18 +313,109 @@
         }
     }
 }
+@media (max-width: $sm) {
+    #mainProjects {
+        .projectGrid {
+            .projectItem {
+                .hoverProjectContainer {
+                    right: 11% !important;
+                    left: 11% !important;
+                }
+                .projectLinker {
+                    i {
+                        font-size: 2rem;
+                    }
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                .projectHero {
+                    .slick-arrow {
+                        &:before {
+                            font-size: 2.5rem;
+                            color: white;
+                        }
+                    }
+                    .slick-dots {
+                        bottom: 2px;
+                        li {
+                            button {
+                                &:before {
+                                    color: white;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .slick-next {
+                        right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $md) {
+    #mainProjects {
+        height: 625vh !important;
+        .projectGrid {
+            grid-template-rows: repeat(16, minmax(150px, 1fr));
+            #projectThingCam {
+                grid-row: span 1 !important;
+            }
+            #projectLightArm {
+                grid-row: span 2 !important;
+                // height: 500px;
+            }
+            #projectCarMount {
+                grid-row: span 1 !important;
+            }
+            #projectBogger {
+                grid-row: span 1 !important;
+            }
+            #projectHeadphoneCable {
+                grid-row: span 1 !important;
+            }
+            #projectCulture {
+                grid-row: span 1 !important;
+            }
+            #projectDashboard {
+                grid-row: span 1;
+            }
+            #projectHomeServer {
+                grid-row: span 2 !important;
+            }
+            #projectPiHole {
+                grid-row: span 1 !important;
+            }
+            #projectSelfieStick {
+                grid-row: span 1 !important;
+            }
+            .photoInsta {
+                grid-row: span 1 !important;
+            }
+            .projectItem {
+                .hoverProjectContainer {
+                    right: 8%;
+                    left: 8%;
+                }
+            }
+        }
+    }
+}
 @media (max-width: $lg) {
     #mainProjects {
-        height: 700vh;
+        // height: 700vh !important;
         .projectGrid {
-            .mechWide {
-
+            #projectCarMount {
+                grid-row: span 3;
+            }
+            #projectHeadphoneCable {
+                grid-row: span 3
             }
             .photoInsta {
                 // grid-column: span 3 !important;
-            }
-            #projectBogger .projectHero .heroItem .img img {
-                object-fit: contain;
             }
         }
     }
@@ -334,8 +424,14 @@
     #mainProjects {
         height: 850vh;
         .projectGrid {
-            .mechWide {
-
+            #projectThingCam {
+                grid-row: span 3;
+            }
+            #projectLightArm {
+                grid-row: span 5;
+            }
+            #projectBogger {
+                grid-column: span 3;
             }
             .photoInsta {
                 grid-column: span 3 !important;

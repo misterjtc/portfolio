@@ -286,9 +286,9 @@ html .hideElement {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   html h1 {
-    font-size: 4rem !important;
+    font-size: 3.2rem !important;
   }
   html h2 {
     font-size: 2.6rem !important;
@@ -300,16 +300,16 @@ html .hideElement {
     font-size: 1.4rem !important;
   }
   html p {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
   html a {
     font-size: 1.2rem !important;
   }
   html i {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
   html input, html label, html textarea {
-    font-size: 1.8rem;
+    font-size: 1.2rem !important;
   }
 }
 @media (max-width: 992px) {
@@ -329,7 +329,7 @@ html .hideElement {
     font-size: 1.2rem;
   }
   html a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   html i {
     font-size: 1.8rem;
@@ -540,7 +540,7 @@ html .hideElement {
       -ms-flex-align: center;
           align-items: center;
   right: 45px;
-  top: 35%;
+  top: 40%;
 }
 #splash .socialLinks ul {
   list-style: none;
@@ -593,16 +593,36 @@ html .hideElement {
   font-weight: 700;
 }
 
+@media (max-width: 576px) {
+  #splash .mainLinks .mobileNav {
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+  }
+  #splash .socialLinks {
+    top: 37%;
+  }
+  #splash .socialLinks li a svg {
+    height: 13px !important;
+    width: 13px !important;
+  }
+}
 @media (max-width: 768px) {
   #splash .headerBold {
-    font-size: 4.5rem !important;
+    font-size: 3.8rem !important;
   }
   #splash h1 {
     font-size: 3.5rem;
     width: 60%;
   }
   #splash .whoDidIt p {
-    font-size: 1rem;
+    font-size: 1rem !important;
+  }
+  #splash .socialLinks ul li:nth-child(2) a {
+    padding: 9px 10px 6px 10px;
+  }
+  #splash .socialLinks ul li a {
+    padding: 10px 5px;
   }
 }
 @media (max-width: 992px) {
@@ -649,7 +669,7 @@ html .hideElement {
   }
 }
 #mainProjects {
-  height: 475vh;
+  height: 450vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,8 +745,8 @@ html .hideElement {
   min-height: 0;
   min-width: 0;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  -ms-grid-rows: (minmax(0, 1fr))[25];
-  grid-template-rows: repeat(25, minmax(0, 1fr));
+  -ms-grid-rows: (minmax(100px, 1fr))[25];
+  grid-template-rows: repeat(25, minmax(100px, 1fr));
   grid-auto-flow: dense;
 }
 #mainProjects .projectGrid .projectItem {
@@ -890,7 +910,6 @@ html .hideElement {
   grid-column: span 3;
   -ms-grid-row-span: 8;
   grid-row: span 8;
-  background: navajowhite;
 }
 #mainProjects .projectGrid #projectMakerspace {
   height: 100%;
@@ -1011,18 +1030,115 @@ html .hideElement {
   grid-row: span 4;
 }
 
-@media (max-width: 992px) {
-  #mainProjects {
-    height: 700vh;
+@media (max-width: 576px) {
+  #mainProjects .projectGrid .projectItem .hoverProjectContainer {
+    right: 11% !important;
+    left: 11% !important;
   }
-  #mainProjects .projectGrid #projectBogger .projectHero .heroItem .img img {
-    -o-object-fit: contain;
-       object-fit: contain;
+  #mainProjects .projectGrid .projectItem .projectLinker i {
+    font-size: 2rem;
+  }
+  #mainProjects .projectGrid .projectItem .projectLinker svg {
+    height: 20px;
+    width: 20px;
+  }
+  #mainProjects .projectGrid .projectItem .projectHero .slick-arrow:before {
+    font-size: 2.5rem;
+    color: white;
+  }
+  #mainProjects .projectGrid .projectItem .projectHero .slick-dots {
+    bottom: 2px;
+  }
+  #mainProjects .projectGrid .projectItem .projectHero .slick-dots li button:before {
+    color: white;
+    font-size: 0.8rem;
+  }
+  #mainProjects .projectGrid .projectItem .projectHero .slick-next {
+    right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #mainProjects {
+    height: 625vh !important;
+  }
+  #mainProjects .projectGrid {
+    -ms-grid-rows: (minmax(150px, 1fr))[16];
+    grid-template-rows: repeat(16, minmax(150px, 1fr));
+  }
+  #mainProjects .projectGrid #projectThingCam {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid #projectLightArm {
+    -ms-grid-row-span: 2 !important;
+    grid-row: span 2 !important;
+  }
+  #mainProjects .projectGrid #projectCarMount {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid #projectBogger {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid #projectHeadphoneCable {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid #projectCulture {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid #projectDashboard {
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+  }
+  #mainProjects .projectGrid #projectHomeServer {
+    -ms-grid-row-span: 2 !important;
+    grid-row: span 2 !important;
+  }
+  #mainProjects .projectGrid #projectPiHole {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid #projectSelfieStick {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid .photoInsta {
+    -ms-grid-row-span: 1 !important;
+    grid-row: span 1 !important;
+  }
+  #mainProjects .projectGrid .projectItem .hoverProjectContainer {
+    right: 8%;
+    left: 8%;
+  }
+}
+@media (max-width: 992px) {
+  #mainProjects .projectGrid #projectCarMount {
+    -ms-grid-row-span: 3;
+    grid-row: span 3;
+  }
+  #mainProjects .projectGrid #projectHeadphoneCable {
+    -ms-grid-row-span: 3;
+    grid-row: span 3;
   }
 }
 @media (max-width: 1200px) {
   #mainProjects {
     height: 850vh;
+  }
+  #mainProjects .projectGrid #projectThingCam {
+    -ms-grid-row-span: 3;
+    grid-row: span 3;
+  }
+  #mainProjects .projectGrid #projectLightArm {
+    -ms-grid-row-span: 5;
+    grid-row: span 5;
+  }
+  #mainProjects .projectGrid #projectBogger {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
   }
   #mainProjects .projectGrid .photoInsta {
     -ms-grid-column-span: 3 !important;
@@ -1078,7 +1194,7 @@ html .hideElement {
   color: palegoldenrod;
 }
 #thisIsMe .meListContainer:nth-child(3) {
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
   height: 100vh;
 }
 #thisIsMe .meListContainer:nth-child(3) .backgroundContainer .colorDot {
@@ -1182,6 +1298,17 @@ html .hideElement {
   background-size: cover;
 }
 
+@media (max-width: 576px) {
+  #thisIsMe #me {
+    height: 110vh;
+  }
+  #thisIsMe #profInterests {
+    height: 140vh;
+  }
+  #thisIsMe #perInterests {
+    height: 110vh;
+  }
+}
 @media (max-width: 768px) {
   #thisIsMe #me .backgroundContainer .theList div {
     margin: 15px 0;
@@ -1199,6 +1326,12 @@ html .hideElement {
   }
 }
 @media (max-width: 992px) {
+  #thisIsMe .meListContainer .backgroundContainer .theList {
+    width: 80%;
+  }
+  #thisIsMe .meListContainer .backgroundContainer .theList div h3, #thisIsMe .meListContainer .backgroundContainer .theList div p {
+    width: 90%;
+  }
   #thisIsMe .meListContainer .backgroundContainer .theList div .icon {
     padding: 23px 40px;
     border-radius: 50px;
@@ -1368,7 +1501,32 @@ html .hideElement {
   color: #272727;
 }
 
+@media (max-width: 576px) {
+  #contact .wrapper .contactTitle h2 {
+    margin-bottom: 15px !important;
+  }
+  #contact .wrapper .contactContent form input {
+    padding: 10px 10px !important;
+    margin: 10px 10px !important;
+  }
+  #contact .wrapper .contactContent form .contactSubmit input[type=submit] {
+    margin: 0 !important;
+  }
+}
 @media (max-width: 992px) {
+  #contact .wrapper .contactTitle h2 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  #contact .wrapper {
+    width: 90%;
+  }
+  #contact .wrapper .contactTitle h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
   #contact .wrapper .contactContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1376,19 +1534,13 @@ html .hideElement {
             flex-direction: column;
   }
   #contact .wrapper .contactContent .img {
-    width: 55%;
+    width: 60%;
+    margin-right: 0;
   }
   #contact .wrapper .contactContent form {
-    width: 70%;
+    margin-top: 25px;
+    width: 60%;
     margin-left: 0;
-  }
-  #contact .wrapper .contactContent form .contactInputs textarea {
-    width: 88%;
-  }
-}
-@media (max-width: 1200px) {
-  #contact .wrapper {
-    width: 90%;
   }
 }
 footer {
@@ -1477,4 +1629,17 @@ footer .wrapper .footerLinks ul li .linkedin {
 }
 footer .wrapper .footerLinks ul li .instagram {
   background: mediumaquamarine;
+}
+
+@media (max-width: 576px) {
+  footer .wrapper .footerLinks ul li a {
+    height: 28px !important;
+    width: 28px !important;
+  }
+}
+@media (max-width: 992px) {
+  footer .wrapper .footerLinks ul li a {
+    height: 35px;
+    width: 35px;
+  }
 }

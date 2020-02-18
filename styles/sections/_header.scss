@@ -132,11 +132,11 @@
         justify-content: center;
         align-items: center;
         right: 45px;
-        top: 35%;
+        top: 40%;
         ul {
             list-style: none;
             li:nth-child(2) a {
-                padding: 11px 14px 9px 14px; 
+                padding: 11px 14px 9px 14px;
             }
             li {
                 background: $linkBackground;
@@ -186,20 +186,45 @@
 @media (min-width: 0) and (max-width: $sm) {
 
 }
-@media (min-width: $sm) {
-
+@media (max-width: $sm) {
+    #splash {
+        .mainLinks {
+            .mobileNav {
+                bottom: 10px;
+                height: 30px; 
+                width: 30px;
+            }
+        }
+        .socialLinks {
+            top: 37%;
+            li a svg {
+                height: 13px !important;
+                width: 13px !important;
+            }
+        }
+    }
 }
 @media (max-width: $md) {
     #splash {
         .headerBold {
-            font-size: 4.5rem !important;
+            font-size: 3.8rem !important;
         }
         h1 {
             font-size: 3.5rem;
             width: 60%;
         }
         .whoDidIt p {
-            font-size: 1rem;
+            font-size: 1rem !important;
+        }
+        .socialLinks ul {
+            li:nth-child(2) a {
+                padding: 9px 10px 6px 10px; 
+            }
+            li {
+                a {
+                    padding: 10px 5px;
+                }
+            } 
         }
     }
 }
@@ -245,8 +270,5 @@
 @media (max-width: $xl) {
     #splash .headerBold {
         font-size: 5.8rem;
-        // .mobileLink {
-        //     display: none;
-        // }
     }
 }

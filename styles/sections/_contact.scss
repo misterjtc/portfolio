@@ -95,30 +95,59 @@
     }
 }
 // contact section media queries
-@media (max-width: $lg) {
+@media (max-width: $sm) {
     #contact {
-        .wrapper .contactContent {
-            flex-direction: column;
-            .img {
-                width: 55%;
+        .wrapper {
+            .contactTitle h2 {
+                margin-bottom: 15px !important;
             }
-            form {
-                width: 70%;
-                margin-left: 0;
-                .contactInputs {
-                    textarea {
-                        width: 88%;
+            .contactContent {
+                form {
+                    input {
+                        padding: 10px 10px !important;
+                        margin: 10px 10px !important;
+                    }
+                    .contactSubmit input[type=submit] {
+                        margin: 0 !important;
                     }
                 }
             }
-    
-        }  
-    } 
+        }
+    }
+}
+@media (max-width: $lg) {
+    #contact {
+        .wrapper .contactTitle h2 {
+            font-size: 4.5rem;
+        }
+    }
 }
 @media (max-width: $xl) {
     #contact {
         .wrapper {
+            .contactTitle h2 {
+                text-align: center;
+                margin-left: 0;
+                margin-bottom: 30px;
+            }
             width: 90%;
+            .contactContent {
+                flex-direction: column;
+                .img {
+                    width: 60%;
+                    margin-right: 0;
+                }
+                form {
+                    margin-top: 25px;
+                    width: 60%;
+                    margin-left: 0;
+                    .contactInputs {
+                        textarea {
+                            // width: 80%;
+                        }
+                    }
+                }
+            }  
         }
     }
 }

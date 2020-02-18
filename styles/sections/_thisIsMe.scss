@@ -36,7 +36,7 @@
             }
         }
         &:nth-child(3) {
-            padding-bottom: 10vh;
+            padding-bottom: 7vh;
             height: 100vh;
             .backgroundContainer {
                 .colorDot {
@@ -123,8 +123,18 @@
     }
 }
 // About me media queries
-@media (min-width: $sm) {
-
+@media (max-width: $sm) {
+    #thisIsMe {
+        #me {
+            height: 110vh;
+        }
+        #profInterests {
+            height: 140vh;
+        }
+        #perInterests {
+            height: 110vh;
+        }
+    }
 }
 @media (max-width: $md) {
     #thisIsMe {
@@ -150,15 +160,22 @@
 }
 @media (max-width: $lg) {
     #thisIsMe .meListContainer .backgroundContainer {
-        .theList div .icon {
-            padding: 23px 40px;
-            border-radius: 50px;
-            i {
-                font-size: 3.5rem;
-            }
+        .theList {
+            width: 80%;
+            div {
+                h3, p {
+                    width: 90%;
+                }
+                .icon {
+                    padding: 23px 40px;
+                    border-radius: 50px;
+                    i {
+                        font-size: 3.5rem;
+                    }
+                }
+            } 
         }
     }
-
 }
 @media (min-width: $lg) {
 
