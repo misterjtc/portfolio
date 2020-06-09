@@ -2,6 +2,14 @@
 $(document).ready(function() {
     // Check if the DOM function is ready
     console.log("I'm Ready")
+    // Timeout function for loader
+    function showPage() {
+      // document.getElementById("loader").style.display = "none";
+      // document.getElementById("dashboard").style.opacity = "1";
+      $('#loader').fadeOut("slow");
+      $('main').fadeIn("slow");
+  }
+  setTimeout(showPage, 3500);
     // Initialize slick sliders
     // Project thing cam
     $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero, #lightarmHero, #selfieStickHero, #piHoleHero, #homeServerHero, #basfiltrHero, #drivfiltrHero, #bajaHero, #OADHero').slick({
@@ -86,8 +94,5 @@ $(document).ready(function() {
       masonry: {
         columnWidth: '.gridSizer'
       }
-    });
-    $grid.imagesLoaded().progress( function() {
-      $grid.isotope('layout');
     });
 });
