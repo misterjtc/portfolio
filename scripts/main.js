@@ -8,8 +8,18 @@ $(document).ready(function() {
       // document.getElementById("dashboard").style.opacity = "1";
       $('#loader').fadeOut("slow");
       $('main').fadeIn("slow");
-  }
-  setTimeout(showPage, 3500);
+      $('body').css("overflow-y", "scroll");
+          // isotope project grid layout
+      $('.projectGrid').isotope({
+        // options
+        itemSelector: '.projectItem',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.gridSizer'
+        }
+      });
+    }
+    setTimeout(showPage, 3500);
     // Initialize slick sliders
     // Project thing cam
     $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero, #lightarmHero, #selfieStickHero, #piHoleHero, #homeServerHero, #basfiltrHero, #drivfiltrHero, #bajaHero, #OADHero').slick({
@@ -84,15 +94,6 @@ $(document).ready(function() {
         $(".mobileList").fadeIn( "fast", function() {
           // Animation complete
         });
-      }
-    });
-    // isotope project grid layout
-    $('.projectGrid').isotope({
-      // options
-      itemSelector: '.projectItem',
-      percentPosition: true,
-      masonry: {
-        columnWidth: '.gridSizer'
       }
     });
 });
