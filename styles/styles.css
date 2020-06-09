@@ -669,7 +669,7 @@ html .hideElement {
   }
 }
 #mainProjects {
-  height: 450vh;
+  height: 600vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,25 +738,9 @@ html .hideElement {
 }
 #mainProjects .projectGrid {
   height: 100%;
-  max-height: 100%;
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  min-height: 0;
-  min-width: 0;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  -ms-grid-rows: (minmax(100px, 1fr))[25];
-  grid-template-rows: repeat(25, minmax(100px, 1fr));
-  grid-auto-flow: dense;
 }
 #mainProjects .projectGrid .projectItem {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  height: 100%;
-  width: 100%;
   position: relative;
   margin: 0;
   background: #dddddd;
@@ -899,78 +883,48 @@ html .hideElement {
   font-size: 4rem;
   color: white;
 }
+#mainProjects .projectGrid .gridSizer {
+  width: 5%;
+}
+#mainProjects .projectGrid .normProj {
+  width: 30%;
+  height: 500px;
+}
+#mainProjects .projectGrid .tallProj {
+  width: 45%;
+  height: 1000px;
+}
+#mainProjects .projectGrid .wideProj {
+  width: 40%;
+  height: 500px;
+}
+#mainProjects .projectGrid .oddProj {
+  width: 40%;
+  height: 500px;
+}
+#mainProjects .projectGrid #projectBumperDesign {
+  width: 50%;
+}
 #mainProjects .projectGrid #projectThingCam {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 4;
-  grid-row: span 4;
+  width: 50%;
 }
 #mainProjects .projectGrid #projectLightArm {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 8;
-  grid-row: span 8;
-}
-#mainProjects .projectGrid #projectMakerspace {
-  height: 100%;
-  width: 100%;
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 8;
-  grid-row: span 8;
-  background: #c7c7c7;
-}
-#mainProjects .projectGrid #projectMakerspace .projectHero .heroItem .img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#mainProjects .projectGrid #projectMakerspace .projectLinker svg {
-  background-size: 50px 50px;
-  fill: white;
+  width: 50%;
 }
 #mainProjects .projectGrid #projectCarMount {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 4;
-  grid-row: span 4;
+  width: 50%;
 }
-#mainProjects .projectGrid #projectTurkeyCat, #mainProjects .projectGrid #projectTurkeyDrone, #mainProjects .projectGrid #projectBogger {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-  -ms-grid-row-span: 3;
-  grid-row: span 3;
+#mainProjects .projectGrid #projectBASFiltrTwo {
+  width: 50%;
 }
-#mainProjects .projectGrid #projectHeadphoneCable {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 4;
-  grid-row: span 4;
+#mainProjects .projectGrid #projectDrivfiltr {
+  width: 30%;
 }
 #mainProjects .projectGrid #projectCulture {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 4;
-  grid-row: span 4;
-  height: 100%;
-  width: 100%;
-}
-#mainProjects .projectGrid #projectCulture .hoverProjectContainer {
-  right: 8.5%;
-  left: 8.5%;
-}
-#mainProjects .projectGrid #projectCulture .hoverProjectSplash h3 {
-  margin-top: 80px;
-}
-#mainProjects .projectGrid #projectCulture .projectHero iframe .controls-arrow {
-  z-index: 999999;
-  color: pink !important;
-  background: pink;
+  width: 50%;
 }
 #mainProjects .projectGrid #projectDashboard {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 3;
-  grid-row: span 3;
+  width: 50%;
   background: white;
 }
 #mainProjects .projectGrid #projectDashboard .projectHero .slick-dots li button:before {
@@ -991,43 +945,19 @@ html .hideElement {
   color: #4d4d4d;
 }
 #mainProjects .projectGrid #projectUtahDrone {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-  -ms-grid-row-span: 3;
-  grid-row: span 3;
+  width: 50%;
 }
 #mainProjects .projectGrid #projectUtahDrone video {
   width: 100%;
 }
-#mainProjects .projectGrid #projectMarine {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-  -ms-grid-row-span: 3;
-  grid-row: span 3;
+#mainProjects .projectGrid #projectFEA {
+  width: 50%;
 }
-#mainProjects .projectGrid #projectGlacierDrone {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-  -ms-grid-row-span: 3;
-  grid-row: span 3;
-}
-#mainProjects .projectGrid #projectHomeServer {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 4;
-  grid-row: span 4;
-}
-#mainProjects .projectGrid #projectPiHole {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 4;
-  grid-row: span 4;
+#mainProjects .projectGrid #projectAutomation {
+  width: 50%;
 }
 #mainProjects .projectGrid #projectSelfieStick {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-  -ms-grid-row-span: 4;
-  grid-row: span 4;
+  width: 50%;
 }
 
 @media (max-width: 576px) {
@@ -1061,88 +991,18 @@ html .hideElement {
   #mainProjects {
     height: 625vh !important;
   }
-  #mainProjects .projectGrid {
-    -ms-grid-rows: (minmax(150px, 1fr))[16];
-    grid-template-rows: repeat(16, minmax(150px, 1fr));
-  }
-  #mainProjects .projectGrid #projectThingCam {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
-  }
-  #mainProjects .projectGrid #projectLightArm {
-    -ms-grid-row-span: 2 !important;
-    grid-row: span 2 !important;
-  }
-  #mainProjects .projectGrid #projectCarMount {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
-  }
-  #mainProjects .projectGrid #projectBogger {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
-  }
-  #mainProjects .projectGrid #projectHeadphoneCable {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
-  }
-  #mainProjects .projectGrid #projectCulture {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
-  }
   #mainProjects .projectGrid #projectDashboard {
     -ms-grid-row-span: 1;
     grid-row: span 1;
-  }
-  #mainProjects .projectGrid #projectHomeServer {
-    -ms-grid-row-span: 2 !important;
-    grid-row: span 2 !important;
-  }
-  #mainProjects .projectGrid #projectPiHole {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
-  }
-  #mainProjects .projectGrid #projectSelfieStick {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
-  }
-  #mainProjects .projectGrid .photoInsta {
-    -ms-grid-row-span: 1 !important;
-    grid-row: span 1 !important;
   }
   #mainProjects .projectGrid .projectItem .hoverProjectContainer {
     right: 8%;
     left: 8%;
   }
 }
-@media (max-width: 992px) {
-  #mainProjects .projectGrid #projectCarMount {
-    -ms-grid-row-span: 3;
-    grid-row: span 3;
-  }
-  #mainProjects .projectGrid #projectHeadphoneCable {
-    -ms-grid-row-span: 3;
-    grid-row: span 3;
-  }
-}
 @media (max-width: 1200px) {
   #mainProjects {
     height: 850vh;
-  }
-  #mainProjects .projectGrid #projectThingCam {
-    -ms-grid-row-span: 3;
-    grid-row: span 3;
-  }
-  #mainProjects .projectGrid #projectLightArm {
-    -ms-grid-row-span: 5;
-    grid-row: span 5;
-  }
-  #mainProjects .projectGrid #projectBogger {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
-  }
-  #mainProjects .projectGrid .photoInsta {
-    -ms-grid-column-span: 3 !important;
-    grid-column: span 3 !important;
   }
 }
 #thisIsMe {

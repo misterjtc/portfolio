@@ -4,9 +4,9 @@ $(document).ready(function() {
     console.log("I'm Ready")
     // Initialize slick sliders
     // Project thing cam
-    $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero, #lightarmHero, #selfieStickHero, #piHoleHero, #homeServerHero').slick({
+    $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero, #lightarmHero, #selfieStickHero, #piHoleHero, #homeServerHero, #basfiltrHero, #drivfiltrHero, #bajaHero, #OADHero').slick({
         dots: true,
-        speed: 500,
+        speed: 600,
         autoplay: true,
         autoplaySpeed: 5000,
         // centerMode: true,
@@ -77,5 +77,17 @@ $(document).ready(function() {
           // Animation complete
         });
       }
+    });
+    // isotope project grid layout
+    $('.projectGrid').isotope({
+      // options
+      itemSelector: '.projectItem',
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.gridSizer'
+      }
+    });
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('layout');
     });
 });

@@ -1,5 +1,5 @@
 #mainProjects {
-    height: 450vh;
+    height: 600vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -41,20 +41,8 @@
     }
     .projectGrid {
         height: 100%;
-        max-height: 100%;
         width: 100%;
-        display: grid;
-        min-height: 0;
-        min-width: 0;
-        // grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-        grid-template-rows: repeat(25, minmax(100px, 1fr));
-        grid-auto-flow: dense;
         .projectItem {
-            justify-self: center;
-            align-self: center;
-            height: 100%;
-            width: 100%;
             position: relative;
             margin: 0;
             background: $greyBackground;
@@ -182,76 +170,54 @@
                 }
             }
         }
+        .gridSizer {
+            width: 5%;
+        }
+        .normProj {
+            width: 30%;
+            height: 500px;
+        }
+        .tallProj {
+            width: 45%;
+            height: 1000px;
+        }
+        .wideProj {
+            width: 40%;
+            height: 500px
+        }
+        .oddProj {
+            width: 40%;
+            height: 500px;
+        }
+        #projectBumperDesign {
+            width: 50%;
+        }
         #projectThingCam {
-            grid-column: span 3 ;
-            grid-row: span 4;
+            width: 50%;
         }
         #projectLightArm {
-            grid-column: span 3;
-            grid-row: span 8;
-        }
-        #projectMakerspace {
-            height: 100%;
-            width: 100%;
-            grid-column: span 3;
-            grid-row: span 8;
-            background: rgba(199, 199, 199,1.0);
-            .projectHero {
-                .heroItem {
-                    .img {
-                        img {
-                            object-fit: cover;
-                        }
-                    }
-                }
-            }
-            .projectLinker {
-                svg {
-                    background-size: 50px 50px;
-                    fill: white;
-                }
-            }
+            width: 50%;
         }
         #projectCarMount {
-            grid-column: span 3 ;
-            grid-row: span 4;
+            width: 50%;
+        }
+        #projectBASFiltrTwo {
+            width: 50%;
         }
         #projectTurkeyCat, #projectTurkeyDrone, #projectBogger {
-            grid-column: span 2;
-            grid-row: span 3;
-        }
-        #projectHeadphoneCable {
-            grid-column: span 3;
-            grid-row: span 4;
-        }
-        #projectCulture {
-            grid-column: span 3;
-            grid-row: span 4;
-            height: 100%;
-            width: 100%;
-            .hoverProjectContainer {
-                right: 8.5%;
-                left: 8.5%;
-            }
-            .hoverProjectSplash {
-                h3 {
-                    margin-top: 80px;
-                }
-            }
-            .projectHero {
-                iframe {
-                    .controls-arrow {
-                        z-index: 999999;
-                        color: pink !important;
-                        background: pink;
-                    }
-                }
-            }
 
         }
+        #projectHeadphoneCable {
+
+        }
+        #projectDrivfiltr {
+            width: 30%;
+        }
+        #projectCulture {
+            width: 50%;
+        }
         #projectDashboard {
-            grid-column: span 3;
-            grid-row: span 3;
+            width: 50%;
             background: white;
             .projectHero {
                 .slick-dots {
@@ -285,31 +251,31 @@
             }
         }
         #projectUtahDrone {
-            grid-column: span 2;
-            grid-row: span 3;
+            width: 50%;
             video {
                 width: 100%;
             }
         }
         #projectMarine {
-            grid-column: span 2;
-            grid-row: span 3;
+
         }
         #projectGlacierDrone {
-            grid-column: span 2;
-            grid-row: span 3;
-        }
-        #projectHomeServer {
-            grid-column: span 3;
-            grid-row: span 4;
+
         }
         #projectPiHole {
-            grid-column: span 3;
-            grid-row: span 4;
+
+        }
+        #projectFEA {
+            width: 50%;
+        }
+        #projectHomeServer {
+            // width: 50%;
+        }
+        #projectAutomation {
+            width: 50%;
         }
         #projectSelfieStick {
-            grid-column: span 3;
-            grid-row: span 4;
+            width: 50%;
         }
     }
 }
@@ -360,40 +326,39 @@
     #mainProjects {
         height: 625vh !important;
         .projectGrid {
-            grid-template-rows: repeat(16, minmax(150px, 1fr));
             #projectThingCam {
-                grid-row: span 1 !important;
+
             }
             #projectLightArm {
-                grid-row: span 2 !important;
+
                 // height: 500px;
             }
             #projectCarMount {
-                grid-row: span 1 !important;
+
             }
             #projectBogger {
-                grid-row: span 1 !important;
+
             }
             #projectHeadphoneCable {
-                grid-row: span 1 !important;
+
             }
             #projectCulture {
-                grid-row: span 1 !important;
+
             }
             #projectDashboard {
                 grid-row: span 1;
             }
             #projectHomeServer {
-                grid-row: span 2 !important;
+
             }
             #projectPiHole {
-                grid-row: span 1 !important;
+
             }
             #projectSelfieStick {
-                grid-row: span 1 !important;
+
             }
             .photoInsta {
-                grid-row: span 1 !important;
+
             }
             .projectItem {
                 .hoverProjectContainer {
@@ -409,13 +374,13 @@
         // height: 700vh !important;
         .projectGrid {
             #projectCarMount {
-                grid-row: span 3;
+
             }
             #projectHeadphoneCable {
-                grid-row: span 3
+
             }
             .photoInsta {
-                // grid-column: span 3 !important;
+
             }
         }
     }
@@ -425,16 +390,16 @@
         height: 850vh;
         .projectGrid {
             #projectThingCam {
-                grid-row: span 3;
+
             }
             #projectLightArm {
-                grid-row: span 5;
+
             }
             #projectBogger {
-                grid-column: span 3;
+
             }
             .photoInsta {
-                grid-column: span 3 !important;
+
             }
         }
     }
