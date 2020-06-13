@@ -1,0 +1,24 @@
+.projectSort {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    button {
+        border: 2px solid $linkBackground;
+        border-radius: 25px;
+        margin: 10px 15px;
+        padding: 15px 20px;
+        transition: all 0.3s linear;
+        background: white;
+        &:hover {
+            background: $linkBackground;
+            color: white;
+        }
+    }
+    .litButton {
+        background: $linkBackground;
+        color: white;
+    }
+}

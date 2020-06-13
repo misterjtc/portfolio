@@ -234,28 +234,24 @@ html {
   font-weight: 400;
   position: relative;
 }
-html h1 {
-  font-size: 6rem;
+html h1, html h2, html h3, html h4, html ul {
   margin: 0;
   padding: 0;
+}
+html h1 {
+  font-size: 6rem;
 }
 html h2 {
   font-size: 4.2rem;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
 }
 html h3 {
   font-size: 2rem;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
 }
 html h4 {
   font-size: 1.7rem;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
 }
 html p {
   font-size: 1.8rem;
@@ -263,6 +259,9 @@ html p {
 html a {
   font-size: 1.5rem;
   text-decoration: none;
+}
+html button {
+  font-size: 1.5rem;
 }
 html i {
   font-size: 2.5rem;
@@ -674,9 +673,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -684,57 +683,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-#mainProjects .projectSort {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#mainProjects .projectSort ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 20px;
-}
-#mainProjects .projectSort ul li {
-  border: 2px solid #272727;
-  border-radius: 25px;
-  margin: 10px 15px;
-  -webkit-transition: background 0.3s linear;
-  -o-transition: background 0.3s linear;
-  transition: background 0.3s linear;
-}
-#mainProjects .projectSort ul li a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px 20px;
-  color: #706f6f;
-  -webkit-transition: color 0.3s linear;
-  -o-transition: color 0.3s linear;
-  transition: color 0.3s linear;
-}
-#mainProjects .projectSort ul li a:hover {
-  color: white;
-}
-#mainProjects .projectSort ul li:hover {
-  background: #272727;
 }
 #mainProjects .projectGrid {
   height: 100%;
@@ -1905,4 +1853,37 @@ body {
     left: -100%;
     opacity: 0;
   }
+}
+.projectSort {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+}
+.projectSort button {
+  border: 2px solid #272727;
+  border-radius: 25px;
+  margin: 10px 15px;
+  padding: 15px 20px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: white;
+}
+.projectSort button:hover {
+  background: #272727;
+  color: white;
+}
+.projectSort .litButton {
+  background: #272727;
+  color: white;
 }

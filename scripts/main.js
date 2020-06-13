@@ -2,24 +2,43 @@
 $(document).ready(function() {
     // Check if the DOM function is ready
     console.log("I'm Ready")
-    // Timeout function for loader
+    // Timeout function for loading page
     function showPage() {
-      // document.getElementById("loader").style.display = "none";
-      // document.getElementById("dashboard").style.opacity = "1";
       $('#loader').fadeOut("slow");
       $('main').fadeIn("slow");
       $('body').css("overflow-y", "scroll");
-          // isotope project grid layout
+      // isotope project grid layout
       $('.projectGrid').isotope({
         // options
         itemSelector: '.projectItem',
         percentPosition: true,
+        // layoutMode: 'packery',
         masonry: {
           columnWidth: '.gridSizer'
         }
+        // packery: {
+        //   // columnWidth: ".gridSizer"
+        //   horizontal: true
+        // }
       });
     }
     setTimeout(showPage, 3500);
+    // Sorting for project section
+    $('.filterContent').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      // use filterFn if matches value
+      // filterValue = filterFns[ filterValue ] || filterValue;
+      $('.projectGrid').isotope({ filter: filterValue });
+    });
+    // change is-checked class on buttons
+    $('.projectSort').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        console.log("youclikced the buttoin")
+        $buttonGroup.find('.litButton').removeClass('litButton');
+        $( this ).addClass('litButton');
+      });
+    });
     // Initialize slick sliders
     // Project thing cam
     $('#thingcamHero, #carmountHero, #boggerHero, #headphoneHero, #glacierHero, #dashboardHero, #lightarmHero, #selfieStickHero, #piHoleHero, #homeServerHero, #basfiltrHero, #drivfiltrHero, #bajaHero, #OADHero').slick({
@@ -32,7 +51,7 @@ $(document).ready(function() {
         adaptiveHeight: true,
         pauseOnHover: true
     });
-    // Smoothscrool for mainLinks section links
+    // Smoothscroll for mainLinks section links
     $('.thisIsMeButton').on('click', function() {
       $.smoothScroll({
         scrollTarget: '#thisIsMe',

@@ -3,28 +3,24 @@ html {
     font-size: $baseFont;
     font-weight: 400;
     position: relative;
+    h1, h2, h3, h4, ul {
+        margin: 0;
+        padding: 0
+    }
     h1 {
         font-size: $h1Desk;
-        margin: 0;
-        padding: 0;
     }
     h2 {
         font-size: $h2Desk;
         font-weight: 400;
-        margin: 0;
-        padding: 0;
     }
     h3 {
         font-size: $h3Desk;
         font-weight: 400;
-        margin: 0;
-        padding: 0;
     }
     h4 {
         font-size: $h4Desk;
         font-weight: 400;
-        margin: 0;
-        padding: 0;
     }
     p {
         font-size: $pDesk;
@@ -32,6 +28,9 @@ html {
     a {
         font-size: $aDesk;
         text-decoration: none;
+    }
+    button {
+        font-size: $buttonDesk;
     }
     i {
         font-size: $iDesk;

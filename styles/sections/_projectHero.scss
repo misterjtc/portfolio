@@ -2,43 +2,9 @@
     height: 600vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    .projectSort {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            padding: 0;
-            margin: 20px;
-            li {
-                border: 2px solid $linkBackground;
-                border-radius: 25px;
-                margin: 10px 15px;
-                transition: background 0.3s linear;
-                a {
-                    display: inline-block;
-                    text-decoration: none;
-                    padding: 15px 20px;
-                    color: $greyText;
-                    transition: color 0.3s linear;
-                    &:hover {
-                        color: white;
-                    }
-                }
-                &:hover {
-                    background: $linkBackground;
-                }
-            }
-        }
-    }
     .projectGrid {
         height: 100%;
         width: 100%;
