@@ -668,7 +668,6 @@ main {
   }
 }
 #mainProjects {
-  height: 600vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,11 +765,11 @@ main {
 #mainProjects .projectGrid .projectItem .projectHero {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 #mainProjects .projectGrid .projectItem .projectHero .heroItem {
   width: 100%;
   height: 100%;
-  position: relative;
 }
 #mainProjects .projectGrid .projectItem .projectHero .heroItem .text {
   position: absolute;
@@ -832,7 +831,7 @@ main {
   color: white;
 }
 #mainProjects .projectGrid .gridSizer {
-  width: 5%;
+  width: 1%;
 }
 #mainProjects .projectGrid .normProj {
   width: 30%;
