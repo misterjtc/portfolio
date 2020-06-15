@@ -155,35 +155,10 @@
             width: 40%;
             height: 500px;
         }
-        #projectBumperDesign {
+        #projectBumperDesign, #projectThingCam, #projectLightArm, #projectCarMount, #projectBASFiltrTwo, #projectCulture, #projectDashboard , #projectUtahDrone, #projectFEA, #projectAutomation, #projectSelfieStick {
             width: 50%;
-        }
-        #projectThingCam {
-            width: 50%;
-        }
-        #projectLightArm {
-            width: 50%;
-        }
-        #projectCarMount {
-            width: 50%;
-        }
-        #projectBASFiltrTwo {
-            width: 50%;
-        }
-        #projectTurkeyCat, #projectTurkeyDrone, #projectBogger {
-
-        }
-        #projectHeadphoneCable {
-
-        }
-        #projectDrivfiltr {
-            width: 30%;
-        }
-        #projectCulture {
-            width: 50%;
-        }
+        } 
         #projectDashboard {
-            width: 50%;
             background: white;
             .projectHero {
                 .slick-dots {
@@ -217,31 +192,9 @@
             }
         }
         #projectUtahDrone {
-            width: 50%;
             video {
                 width: 100%;
             }
-        }
-        #projectMarine {
-
-        }
-        #projectGlacierDrone {
-
-        }
-        #projectPiHole {
-
-        }
-        #projectFEA {
-            width: 50%;
-        }
-        #projectHomeServer {
-            // width: 50%;
-        }
-        #projectAutomation {
-            width: 50%;
-        }
-        #projectSelfieStick {
-            width: 50%;
         }
     }
 }
@@ -292,40 +245,6 @@
     #mainProjects {
         height: 625vh !important;
         .projectGrid {
-            #projectThingCam {
-
-            }
-            #projectLightArm {
-
-                // height: 500px;
-            }
-            #projectCarMount {
-
-            }
-            #projectBogger {
-
-            }
-            #projectHeadphoneCable {
-
-            }
-            #projectCulture {
-
-            }
-            #projectDashboard {
-                grid-row: span 1;
-            }
-            #projectHomeServer {
-
-            }
-            #projectPiHole {
-
-            }
-            #projectSelfieStick {
-
-            }
-            .photoInsta {
-
-            }
             .projectItem {
                 .hoverProjectContainer {
                     right: 8%;
@@ -336,37 +255,9 @@
     }
 }
 @media (max-width: $lg) {
-    #mainProjects {
-        // height: 700vh !important;
-        .projectGrid {
-            #projectCarMount {
-
-            }
-            #projectHeadphoneCable {
-
-            }
-            .photoInsta {
-
-            }
-        }
-    }
 }
 @media (max-width: $xl) {
     #mainProjects {
         height: 850vh;
-        .projectGrid {
-            #projectThingCam {
-
-            }
-            #projectLightArm {
-
-            }
-            #projectBogger {
-
-            }
-            .photoInsta {
-
-            }
-        }
     }
 }

@@ -214,7 +214,7 @@ $(document).ready(function() {
     });
     $('.projectButton').on('click', function() {
       $.smoothScroll({
-        scrollTarget: '#mainProjects',
+        scrollTarget: '#projectStart',
         speed: 800
       });
     });

@@ -849,29 +849,10 @@ main {
   width: 40%;
   height: 500px;
 }
-#mainProjects .projectGrid #projectBumperDesign {
-  width: 50%;
-}
-#mainProjects .projectGrid #projectThingCam {
-  width: 50%;
-}
-#mainProjects .projectGrid #projectLightArm {
-  width: 50%;
-}
-#mainProjects .projectGrid #projectCarMount {
-  width: 50%;
-}
-#mainProjects .projectGrid #projectBASFiltrTwo {
-  width: 50%;
-}
-#mainProjects .projectGrid #projectDrivfiltr {
-  width: 30%;
-}
-#mainProjects .projectGrid #projectCulture {
+#mainProjects .projectGrid #projectBumperDesign, #mainProjects .projectGrid #projectThingCam, #mainProjects .projectGrid #projectLightArm, #mainProjects .projectGrid #projectCarMount, #mainProjects .projectGrid #projectBASFiltrTwo, #mainProjects .projectGrid #projectCulture, #mainProjects .projectGrid #projectDashboard, #mainProjects .projectGrid #projectUtahDrone, #mainProjects .projectGrid #projectFEA, #mainProjects .projectGrid #projectAutomation, #mainProjects .projectGrid #projectSelfieStick {
   width: 50%;
 }
 #mainProjects .projectGrid #projectDashboard {
-  width: 50%;
   background: white;
 }
 #mainProjects .projectGrid #projectDashboard .projectHero .slick-dots li button:before {
@@ -891,20 +872,8 @@ main {
 #mainProjects .projectGrid #projectDashboard .projectLinker:hover {
   color: #4d4d4d;
 }
-#mainProjects .projectGrid #projectUtahDrone {
-  width: 50%;
-}
 #mainProjects .projectGrid #projectUtahDrone video {
   width: 100%;
-}
-#mainProjects .projectGrid #projectFEA {
-  width: 50%;
-}
-#mainProjects .projectGrid #projectAutomation {
-  width: 50%;
-}
-#mainProjects .projectGrid #projectSelfieStick {
-  width: 50%;
 }
 
 @media (max-width: 576px) {
@@ -937,10 +906,6 @@ main {
 @media (max-width: 768px) {
   #mainProjects {
     height: 625vh !important;
-  }
-  #mainProjects .projectGrid #projectDashboard {
-    -ms-grid-row-span: 1;
-    grid-row: span 1;
   }
   #mainProjects .projectGrid .projectItem .hoverProjectContainer {
     right: 8%;
@@ -1866,7 +1831,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 .projectSort button {
   border: 2px solid #272727;
@@ -1877,6 +1842,8 @@ body {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
   background: white;
+  outline: none;
+  cursor: pointer;
 }
 .projectSort button:hover {
   background: #272727;
