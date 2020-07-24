@@ -1,5 +1,4 @@
 #mainProjects {
-    // height: 600vh;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -199,8 +198,27 @@
     }
 }
 @media (max-width: $sm) {
-    #mainProjects {
+    body main #mainProjects {
         .projectGrid {
+            .gridSizer {
+                width: 100%;
+            }
+            .normProj {
+                width: 100%;
+                height: 300px;
+            }
+            .tallProj {
+                width: 100%;
+                height: 850px;
+            }
+            .wideProj {
+                width: 100%;
+                height: 400px
+            }
+            .oddProj {
+                width: 100%;
+                height: 500px;
+            }
             .projectItem {
                 .hoverProjectContainer {
                     right: 11% !important;
@@ -241,10 +259,29 @@
         }
     }
 }
-@media (max-width: $md) {
+@media (min-width: $sm + 1px) and (max-width: $md) {
     #mainProjects {
-        height: 625vh !important;
+        // height: 625vh !important;
         .projectGrid {
+            .gridSizer {
+                width: 50%;
+            }
+            .normProj {
+                width: 50%;
+                height: 300px;
+            }
+            .tallProj {
+                width: 100%;
+                height: 850px;
+            }
+            .wideProj {
+                width: 100%;
+                height: 400px
+            }
+            .oddProj {
+                width: 50%;
+                height: 500px;
+            }
             .projectItem {
                 .hoverProjectContainer {
                     right: 8%;
@@ -254,10 +291,53 @@
         }
     }
 }
-@media (max-width: $lg) {
+@media (min-width: $md + 1px) and (max-width: $lg) {
+    body main #mainProjects {
+        .projectGrid {
+            .normProj {
+                height: 350px;
+            }
+            .tallProj {
+                height: 600px;
+            }
+            .wideProj {
+                height: 300px;
+            }
+        }
+    }
 }
-@media (max-width: $xl) {
+@media (min-width: $xl) {
     #mainProjects {
-        height: 850vh;
+        // height: 850vh;
+        .projectGrid {
+            .normProj {
+                width: 50%;
+                height: 400px;
+            }
+            .tallProj {
+                width: 50%;
+                height: 800px;
+            }
+            .wideProj {
+                width: 50%;
+                height: 400px;
+            }
+            .oddProj {
+                width: 33%;
+            }
+            #projectTurkeyCat, #projectTurkeyDrone, #projectBASTwo, #projectCarMount, #projectBaja, #projectBogger, #projectGlacierDrone, #projectHeatTreat, #projectMarine {
+                width: 50%;
+            }
+            #projectHeadphoneCable, #projectPiHole {
+                width: 60%;
+            }
+            #projectDrivfiltr, #projectOAD {
+                width: 40%;
+            }
+            #projectSelfieStick {
+                width: 100%;
+                height: 500px;
+            }
+        }
     }
 }

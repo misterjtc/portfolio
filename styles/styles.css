@@ -307,7 +307,7 @@ main {
   html i {
     font-size: 1.2rem !important;
   }
-  html input, html label, html textarea {
+  html input, html label, html textarea, html button {
     font-size: 1.2rem !important;
   }
 }
@@ -877,44 +877,115 @@ main {
 }
 
 @media (max-width: 576px) {
-  #mainProjects .projectGrid .projectItem .hoverProjectContainer {
+  body main #mainProjects .projectGrid .gridSizer {
+    width: 100%;
+  }
+  body main #mainProjects .projectGrid .normProj {
+    width: 100%;
+    height: 300px;
+  }
+  body main #mainProjects .projectGrid .tallProj {
+    width: 100%;
+    height: 850px;
+  }
+  body main #mainProjects .projectGrid .wideProj {
+    width: 100%;
+    height: 400px;
+  }
+  body main #mainProjects .projectGrid .oddProj {
+    width: 100%;
+    height: 500px;
+  }
+  body main #mainProjects .projectGrid .projectItem .hoverProjectContainer {
     right: 11% !important;
     left: 11% !important;
   }
-  #mainProjects .projectGrid .projectItem .projectLinker i {
+  body main #mainProjects .projectGrid .projectItem .projectLinker i {
     font-size: 2rem;
   }
-  #mainProjects .projectGrid .projectItem .projectLinker svg {
+  body main #mainProjects .projectGrid .projectItem .projectLinker svg {
     height: 20px;
     width: 20px;
   }
-  #mainProjects .projectGrid .projectItem .projectHero .slick-arrow:before {
+  body main #mainProjects .projectGrid .projectItem .projectHero .slick-arrow:before {
     font-size: 2.5rem !important;
     color: white;
   }
-  #mainProjects .projectGrid .projectItem .projectHero .slick-dots {
+  body main #mainProjects .projectGrid .projectItem .projectHero .slick-dots {
     bottom: 2px;
   }
-  #mainProjects .projectGrid .projectItem .projectHero .slick-dots li button:before {
+  body main #mainProjects .projectGrid .projectItem .projectHero .slick-dots li button:before {
     color: white;
     font-size: 0.8rem;
   }
-  #mainProjects .projectGrid .projectItem .projectHero .slick-next {
+  body main #mainProjects .projectGrid .projectItem .projectHero .slick-next {
     right: 15px;
   }
 }
-@media (max-width: 768px) {
-  #mainProjects {
-    height: 625vh !important;
+@media (min-width: 577px) and (max-width: 768px) {
+  #mainProjects .projectGrid .gridSizer {
+    width: 50%;
+  }
+  #mainProjects .projectGrid .normProj {
+    width: 50%;
+    height: 300px;
+  }
+  #mainProjects .projectGrid .tallProj {
+    width: 100%;
+    height: 850px;
+  }
+  #mainProjects .projectGrid .wideProj {
+    width: 100%;
+    height: 400px;
+  }
+  #mainProjects .projectGrid .oddProj {
+    width: 50%;
+    height: 500px;
   }
   #mainProjects .projectGrid .projectItem .hoverProjectContainer {
     right: 8%;
     left: 8%;
   }
 }
-@media (max-width: 1200px) {
-  #mainProjects {
-    height: 850vh;
+@media (min-width: 769px) and (max-width: 992px) {
+  body main #mainProjects .projectGrid .normProj {
+    height: 350px;
+  }
+  body main #mainProjects .projectGrid .tallProj {
+    height: 600px;
+  }
+  body main #mainProjects .projectGrid .wideProj {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #mainProjects .projectGrid .normProj {
+    width: 50%;
+    height: 400px;
+  }
+  #mainProjects .projectGrid .tallProj {
+    width: 50%;
+    height: 800px;
+  }
+  #mainProjects .projectGrid .wideProj {
+    width: 50%;
+    height: 400px;
+  }
+  #mainProjects .projectGrid .oddProj {
+    width: 33%;
+  }
+  #mainProjects .projectGrid #projectTurkeyCat, #mainProjects .projectGrid #projectTurkeyDrone, #mainProjects .projectGrid #projectBASTwo, #mainProjects .projectGrid #projectCarMount, #mainProjects .projectGrid #projectBaja, #mainProjects .projectGrid #projectBogger, #mainProjects .projectGrid #projectGlacierDrone, #mainProjects .projectGrid #projectHeatTreat, #mainProjects .projectGrid #projectMarine {
+    width: 50%;
+  }
+  #mainProjects .projectGrid #projectHeadphoneCable, #mainProjects .projectGrid #projectPiHole {
+    width: 60%;
+  }
+  #mainProjects .projectGrid #projectDrivfiltr, #mainProjects .projectGrid #projectOAD {
+    width: 40%;
+  }
+  #mainProjects .projectGrid #projectSelfieStick {
+    width: 100%;
+    height: 500px;
   }
 }
 #thisIsMe {
@@ -1113,7 +1184,7 @@ main {
   }
 }
 #contact {
-  height: 100vh;
+  padding: 50px 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
