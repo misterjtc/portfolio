@@ -285,7 +285,7 @@ main {
   display: none;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 0) and (max-width: 576px) {
   html h1 {
     font-size: 3.2rem !important;
   }
@@ -311,7 +311,33 @@ main {
     font-size: 1.2rem !important;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 768px) {
+  html h1 {
+    font-size: 3.2rem !important;
+  }
+  html h2 {
+    font-size: 2.6rem !important;
+  }
+  html h3 {
+    font-size: 1.5rem !important;
+  }
+  html h4 {
+    font-size: 1.4rem !important;
+  }
+  html p {
+    font-size: 1.2rem !important;
+  }
+  html a {
+    font-size: 1.2rem !important;
+  }
+  html i {
+    font-size: 1.2rem !important;
+  }
+  html input, html label, html textarea, html button {
+    font-size: 1.2rem !important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
   html h1 {
     font-size: 4.4rem;
   }
@@ -337,7 +363,7 @@ main {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1201px) {
   html h1 {
     font-size: 4.4rem;
   }
@@ -923,33 +949,42 @@ main {
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  #mainProjects .projectGrid .gridSizer {
+  body main #mainProjects .projectGrid .gridSizer {
     width: 50%;
   }
-  #mainProjects .projectGrid .normProj {
+  body main #mainProjects .projectGrid .normProj {
     width: 50%;
     height: 300px;
   }
-  #mainProjects .projectGrid .tallProj {
-    width: 100%;
-    height: 850px;
+  body main #mainProjects .projectGrid .tallProj {
+    width: 50%;
+    height: 600px;
   }
-  #mainProjects .projectGrid .wideProj {
-    width: 100%;
-    height: 400px;
+  body main #mainProjects .projectGrid .wideProj {
+    width: 50%;
+    height: 300px;
   }
-  #mainProjects .projectGrid .oddProj {
+  body main #mainProjects .projectGrid .oddProj {
     width: 50%;
     height: 500px;
   }
-  #mainProjects .projectGrid .projectItem .hoverProjectContainer {
+  body main #mainProjects .projectGrid .projectItem .hoverProjectContainer {
     right: 8%;
     left: 8%;
+  }
+  body main #mainProjects .projectGrid .projectItem .projectHero iframe #document html body div aside button .controls-arrow {
+    font-size: 2rem;
+  }
+  body main #mainProjects .projectGrid .projectItem .projectHero .slick-next {
+    right: 20px;
+  }
+  body main #mainProjects .projectGrid .projectItem .projectHero .slick-arrow:before {
+    font-size: 2.8rem;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
   body main #mainProjects .projectGrid .normProj {
-    height: 350px;
+    height: 300px;
   }
   body main #mainProjects .projectGrid .tallProj {
     height: 600px;
@@ -958,18 +993,31 @@ main {
     height: 300px;
   }
 }
-@media (min-width: 1200px) {
-  #mainProjects .projectGrid .normProj {
+@media (min-width: 993px) and (max-width: 1200px) {
+  #mainProjects .projectGrid gridSizer {
     width: 50%;
-    height: 400px;
-  }
-  #mainProjects .projectGrid .tallProj {
-    width: 50%;
-    height: 800px;
   }
   #mainProjects .projectGrid .wideProj {
     width: 50%;
-    height: 400px;
+    height: 350px;
+  }
+  #mainProjects .projectGrid .normProj {
+    width: 50%;
+    height: 350px;
+  }
+  #mainProjects .projectGrid .tallProj {
+    height: 700px;
+  }
+}
+@media (min-width: 1201px) {
+  #mainProjects .projectGrid .normProj {
+    width: 50%;
+  }
+  #mainProjects .projectGrid .tallProj {
+    width: 50%;
+  }
+  #mainProjects .projectGrid .wideProj {
+    width: 50%;
   }
   #mainProjects .projectGrid .oddProj {
     width: 33%;
@@ -985,7 +1033,6 @@ main {
   }
   #mainProjects .projectGrid #projectSelfieStick {
     width: 100%;
-    height: 500px;
   }
 }
 #thisIsMe {
@@ -1475,12 +1522,24 @@ footer .wrapper .footerLinks ul li .instagram {
 }
 
 @media (max-width: 576px) {
+  footer {
+    height: 10vh;
+  }
   footer .wrapper .footerLinks ul li a {
-    height: 28px !important;
-    width: 28px !important;
+    height: 27px;
+    width: 27px;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 768px) {
+  footer {
+    height: 10vh;
+  }
+  footer .wrapper .footerLinks ul li a {
+    height: 27px;
+    width: 27px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
   footer .wrapper .footerLinks ul li a {
     height: 35px;
     width: 35px;
@@ -1923,4 +1982,10 @@ body {
 .projectSort .litButton {
   background: #272727;
   color: white;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .projectSort button {
+    padding: 10px 15px;
+  }
 }

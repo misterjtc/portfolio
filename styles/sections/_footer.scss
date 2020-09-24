@@ -78,14 +78,30 @@ footer {
 }
 // Footer media queries
 @media (max-width: $sm) {
-    footer .wrapper .footerLinks ul li a {
-        height: 28px !important;
-        width: 28px !important;
-    }
+    footer {
+        height: 10vh;
+        .wrapper .footerLinks ul li a {
+            height: 27px;
+            width: 27px;
+        }
+    } 
+
 }
-@media (max-width: $lg) {
+@media (min-width: $sm + 1px) and (max-width: $md) {
+    footer {
+        height: 10vh;
+        .wrapper .footerLinks ul li a {
+            height: 27px;
+            width: 27px;
+        }
+    } 
+}
+@media (min-width: $md + 1px) and (max-width: $lg) {
     footer .wrapper .footerLinks ul li a {
         height: 35px;
         width: 35px;
+}
+@media (max-width: $lg) {
+
     }
 }

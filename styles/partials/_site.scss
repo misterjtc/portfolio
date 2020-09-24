@@ -53,9 +53,6 @@ main {
     display: none;
 }
 @media (min-width: 0) and (max-width: $sm) {
-
-}
-@media (max-width: $sm) {
     html {
         h1 {
             font-size: $h1Mobile !important;
@@ -83,10 +80,38 @@ main {
         }
     }
 }
-@media (max-width: $md) {
+@media (min-width: $sm + 1px) and (max-width: $md) {
+    html {
+        h1 {
+            font-size: $h1Mobile !important;
+        }
+        h2 {
+            font-size: $h2Mobile !important;
+        }
+        h3 {
+            font-size: $h3Mobile !important;
+        }
+        h4 {
+            font-size: $h4Mobile !important;
+        }
+        p {
+            font-size: $pMobile !important;
+        }
+        a {
+            font-size: $aMobile !important;
+        }
+        i {
+            font-size: $iMobile !important;
+        }
+        input, label, textarea, button {
+            font-size: $inputMobile !important;
+        }
+    }
+}
+@media (min-width: $md + 1px) and (max-width: $lg) {
 
 }
-@media (max-width: $lg) {
+@media (min-width: $lg + 1px) and (max-width: $xl) {
     html {
         h1 {
             font-size: $h1Tablet;
@@ -114,7 +139,7 @@ main {
         }
     }
 }
-@media (max-width: $xl) {
+@media (min-width: $xl + 1px) {
     html {
         h1 {
             font-size: $h1Tablet;

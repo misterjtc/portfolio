@@ -197,6 +197,7 @@
         }
     }
 }
+
 @media (max-width: $sm) {
     body main #mainProjects {
         .projectGrid {
@@ -260,8 +261,7 @@
     }
 }
 @media (min-width: $sm + 1px) and (max-width: $md) {
-    #mainProjects {
-        // height: 625vh !important;
+    body main #mainProjects {
         .projectGrid {
             .gridSizer {
                 width: 50%;
@@ -271,12 +271,12 @@
                 height: 300px;
             }
             .tallProj {
-                width: 100%;
-                height: 850px;
+                width: 50%;
+                height: 600px;
             }
             .wideProj {
-                width: 100%;
-                height: 400px
+                width: 50%;
+                height: 300px
             }
             .oddProj {
                 width: 50%;
@@ -287,6 +287,19 @@
                     right: 8%;
                     left: 8%;
                 }
+                .projectHero {
+                    iframe #document html body div aside button .controls-arrow {
+                        font-size: 2rem;
+                    }
+                    .slick-next {
+                        right: 20px;
+                    }
+                    .slick-arrow {
+                        &:before {
+                            font-size: 2.8rem;
+                        }
+                    }
+                }
             }
         }
     }
@@ -295,7 +308,7 @@
     body main #mainProjects {
         .projectGrid {
             .normProj {
-                height: 350px;
+                height: 300px;
             }
             .tallProj {
                 height: 600px;
@@ -306,21 +319,41 @@
         }
     }
 }
-@media (min-width: $xl) {
+@media (min-width: $lg + 1px) and (max-width: $xl) {
+    #mainProjects {
+        .projectGrid {
+            gridSizer {
+                width: 50%;
+            }
+            .wideProj {
+                width: 50%;
+                height: 350px;
+            }
+            .normProj {
+                width: 50%;
+                height: 350px;
+            }
+            .tallProj {
+                height: 700px
+            }
+        }
+    }
+}
+@media (min-width: $xl + 1px) {
     #mainProjects {
         // height: 850vh;
         .projectGrid {
             .normProj {
                 width: 50%;
-                height: 400px;
+                // height: 400px;
             }
             .tallProj {
                 width: 50%;
-                height: 800px;
+                // height: 800px;
             }
             .wideProj {
                 width: 50%;
-                height: 400px;
+                // height: 400px;
             }
             .oddProj {
                 width: 33%;
@@ -336,7 +369,7 @@
             }
             #projectSelfieStick {
                 width: 100%;
-                height: 500px;
+                // height: 500px;
             }
         }
     }
