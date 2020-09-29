@@ -150,10 +150,6 @@
             width: 40%;
             height: 500px
         }
-        .oddProj {
-            width: 40%;
-            height: 500px;
-        }
         #projectBumperDesign, #projectThingCam, #projectLightArm, #projectCarMount, #projectBASFiltrTwo, #projectCulture, #projectDashboard , #projectUtahDrone, #projectFEA, #projectAutomation, #projectSelfieStick {
             width: 50%;
         } 
@@ -202,23 +198,25 @@
     body main #mainProjects {
         .projectGrid {
             .gridSizer {
-                width: 100%;
+                width: 100% !important;
             }
             .normProj {
-                width: 100%;
+                width: 100% !important;
                 height: 300px;
             }
             .tallProj {
-                width: 100%;
-                height: 850px;
+                width: 100% !important;
+                height: 550px;
             }
             .wideProj {
-                width: 100%;
-                height: 400px
+                width: 100% !important;
+                height: 300px
             }
-            .oddProj {
-                width: 100%;
-                height: 500px;
+            #projectOAD, #projectDrivfiltr {
+                height: 350px;
+            }
+            #projectBASFiltrTwo {
+                height: 250px;
             }
             .projectItem {
                 .hoverProjectContainer {

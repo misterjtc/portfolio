@@ -52,59 +52,59 @@ html {
 main {
     display: none;
 }
-@media (min-width: 0) and (max-width: $sm) {
+@media (max-width: $sm) {
     html {
         h1 {
-            font-size: $h1Mobile !important;
+            font-size: $h1Mobile;
         }
         h2 {
-            font-size: $h2Mobile !important;
+            font-size: $h2Mobile;
         }
         h3 {
-            font-size: $h3Mobile !important;
+            font-size: $h3Mobile;
         }
         h4 {
-            font-size: $h4Mobile !important;
+            font-size: $h4Mobile;
         }
         p {
-            font-size: $pMobile !important;
+            font-size: $pMobile;
         }
         a {
-            font-size: $aMobile !important;
+            font-size: $aMobile;
         }
         i {
-            font-size: $iMobile !important;
+            font-size: $iMobile;
         }
         input, label, textarea, button {
-            font-size: $inputMobile !important;
+            font-size: $inputMobile;
         }
     }
 }
 @media (min-width: $sm + 1px) and (max-width: $md) {
     html {
         h1 {
-            font-size: $h1Mobile !important;
+            font-size: $h1Mobile;
         }
         h2 {
-            font-size: $h2Mobile !important;
+            font-size: $h2Mobile;
         }
         h3 {
-            font-size: $h3Mobile !important;
+            font-size: $h3Mobile;
         }
         h4 {
-            font-size: $h4Mobile !important;
+            font-size: $h4Mobile;
         }
         p {
-            font-size: $pMobile !important;
+            font-size: $pMobile;
         }
         a {
-            font-size: $aMobile !important;
+            font-size: $aMobile;
         }
         i {
-            font-size: $iMobile !important;
+            font-size: $iMobile;
         }
         input, label, textarea, button {
-            font-size: $inputMobile !important;
+            font-size: $inputMobile;
         }
     }
 }

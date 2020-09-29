@@ -89,15 +89,14 @@ body {
         position: absolute;
         font-family: 'Open Sans';
         font-weight: 600;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         text-transform: uppercase;
-        left: 50.4%;
-        top: 56%;
+        left: 49.5%;
+        top: 55%;
         margin-left: -20px;
         color: $jetmanColour;
     }
 }
-
 .loaderBody > span > span:nth-child(2) {
     top: 3px;
     animation: fazer2 .4s linear infinite;
@@ -191,7 +190,6 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-  
     span {
       position: absolute;
       height: 2px;
@@ -259,3 +257,39 @@ body {
       opacity: 0;
     }
   }
+@media (max-width: $sm) {
+  #loader {
+    .loaderBody {
+      top: 48%;
+      left: 45%;
+    }
+    h1 {
+      top: 53%;
+      left: 43% !important;
+      font-size: 2.2rem;
+    }
+  }
+}
+@media (min-width: $sm + 1px) {
+}
+@media (min-width: $sm + 1px) and (max-width: $md) {  
+  #loader {
+    h1 {
+      left: 48.5%;
+    }
+  }
+}
+@media (min-width: $md + 1px) and (max-width: $lg) {
+}
+@media (min-width: $lg + 1px) and (max-width: $xl) {
+  #loader {
+    .loaderBody{
+      left: 48%;
+    }
+    h1 {
+      font-size: 2.5rem;
+      left: 46.5%;
+      top: 53%;
+    }
+  }
+}

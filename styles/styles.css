@@ -285,56 +285,56 @@ main {
   display: none;
 }
 
-@media (min-width: 0) and (max-width: 576px) {
+@media (max-width: 576px) {
   html h1 {
-    font-size: 3.2rem !important;
+    font-size: 3.2rem;
   }
   html h2 {
-    font-size: 2.6rem !important;
+    font-size: 2.6rem;
   }
   html h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
   html h4 {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
   }
   html p {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   html a {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   html i {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   html input, html label, html textarea, html button {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
   html h1 {
-    font-size: 3.2rem !important;
+    font-size: 3.2rem;
   }
   html h2 {
-    font-size: 2.6rem !important;
+    font-size: 2.6rem;
   }
   html h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
   html h4 {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
   }
   html p {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   html a {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   html i {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   html input, html label, html textarea, html button {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -871,10 +871,6 @@ main {
   width: 40%;
   height: 500px;
 }
-#mainProjects .projectGrid .oddProj {
-  width: 40%;
-  height: 500px;
-}
 #mainProjects .projectGrid #projectBumperDesign, #mainProjects .projectGrid #projectThingCam, #mainProjects .projectGrid #projectLightArm, #mainProjects .projectGrid #projectCarMount, #mainProjects .projectGrid #projectBASFiltrTwo, #mainProjects .projectGrid #projectCulture, #mainProjects .projectGrid #projectDashboard, #mainProjects .projectGrid #projectUtahDrone, #mainProjects .projectGrid #projectFEA, #mainProjects .projectGrid #projectAutomation, #mainProjects .projectGrid #projectSelfieStick {
   width: 50%;
 }
@@ -904,23 +900,25 @@ main {
 
 @media (max-width: 576px) {
   body main #mainProjects .projectGrid .gridSizer {
-    width: 100%;
+    width: 100% !important;
   }
   body main #mainProjects .projectGrid .normProj {
-    width: 100%;
+    width: 100% !important;
     height: 300px;
   }
   body main #mainProjects .projectGrid .tallProj {
-    width: 100%;
-    height: 850px;
+    width: 100% !important;
+    height: 550px;
   }
   body main #mainProjects .projectGrid .wideProj {
-    width: 100%;
-    height: 400px;
+    width: 100% !important;
+    height: 300px;
   }
-  body main #mainProjects .projectGrid .oddProj {
-    width: 100%;
-    height: 500px;
+  body main #mainProjects .projectGrid #projectOAD, body main #mainProjects .projectGrid #projectDrivfiltr {
+    height: 350px;
+  }
+  body main #mainProjects .projectGrid #projectBASFiltrTwo {
+    height: 250px;
   }
   body main #mainProjects .projectGrid .projectItem .hoverProjectContainer {
     right: 11% !important;
@@ -1642,10 +1640,10 @@ body {
   position: absolute;
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
-  left: 50.4%;
-  top: 56%;
+  left: 49.5%;
+  top: 55%;
   margin-left: -20px;
   color: white;
 }
@@ -1948,6 +1946,32 @@ body {
     opacity: 0;
   }
 }
+@media (max-width: 576px) {
+  #loader .loaderBody {
+    top: 48%;
+    left: 45%;
+  }
+  #loader h1 {
+    top: 53%;
+    left: 43% !important;
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  #loader h1 {
+    left: 48.5%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  #loader .loaderBody {
+    left: 48%;
+  }
+  #loader h1 {
+    font-size: 2.5rem;
+    left: 46.5%;
+    top: 53%;
+  }
+}
 .projectSort {
   width: 100%;
   display: -webkit-box;
@@ -1984,7 +2008,12 @@ body {
   color: white;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (max-width: 576px) {
+  .projectSort button {
+    padding: 8px 13px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
   .projectSort button {
     padding: 10px 15px;
   }
