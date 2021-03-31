@@ -72,9 +72,9 @@ $(document).ready(function() {
         $('#projectBASTwo').css('width', '50%');
         $('#projectHeatTreat').css('width', '50%');
         $('#projectDrivfiltr').css('width', '50%');
-        $('#drivfiltrHero').css('padding', '0 20%');
+        // $('#drivfiltrHero').css('padding', '0 20%');
         $('#projectOAD').css('width', '50%');
-        $('#OADHero').css('padding', '0 20%');
+        // $('#OADHero').css('padding', '0 20%');
         // reload the grid
         $('.projectGrid').isotope({
           itemSelector: '.projectItem',
